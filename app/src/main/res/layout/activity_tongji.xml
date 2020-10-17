@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".tabbar.Tongji">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="59dp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:text="TODAY"
+        android:textSize="30sp" />
+    <LinearLayout
+        android:id="@+id/ll_content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:background="@android:color/white"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_marginTop="100dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="#A1DECE"
+            android:textSize="20dp"
+            android:text="今日支出" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#A1DECE"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="36dp"
+            android:text="￥10.07"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="收入￥0"
+            android:textSize="18dp"
+            android:gravity="center"
+            android:textColor="#B1B1B1"/>
+        <Button
+            android:layout_marginTop="40dp"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:text="记一笔"
+            android:background="@drawable/textview_border"
+            android:gravity="center"/>
+
+        <TextView
+            android:layout_marginTop="40dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="隐藏近三十日账单（63）v"/>
+
+        <Button
+            android:layout_marginTop="30dp"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:text="查看详情"
+            android:background="@drawable/textview_border"
+            android:gravity="center"/>
+
+
+        <FrameLayout
+            android:id="@+id/main_body"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/white">
+        </FrameLayout>
+
+
+    </LinearLayout>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:background="#F2F2F2"
+        android:id="@+id/btn_group"
+        android:orientation="horizontal">
+        <RadioButton
+            style="@style/TabMenuItem"
+            android:drawableTop="@drawable/today"
+            android:id="@+id/btn_course"
+            android:text="TODAT"
+            android:textColor="#AAA"/>
+        <RadioButton
+            style="@style/TabMenuItem"
+            android:drawableTop="@drawable/tongji"
+            android:id="@+id/btn_execise"
+            android:text="统计" />
+        <RadioButton
+            style="@style/TabMenuItem"
+            android:drawableTop="@drawable/zichan"
+            android:id="@+id/btn_message"
+            android:text="资产" />
+        <RadioButton
+            style="@style/TabMenuItem"
+            android:drawableTop="@drawable/wode"
+            android:id="@+id/btn_my"
+            android:text="我的" />
+    </RadioGroup>
+</LinearLayout>

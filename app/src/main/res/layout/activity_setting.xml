@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".tabbar.Setting">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="59dp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:text="更多"
+        android:textColor="#AAA"
+        android:background="#F8F9F4"
+        android:textSize="30sp" />
+
+    <Button
+        android:layout_marginTop="10dp"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_gravity="center"
+        android:background="@drawable/touxiang"/>
+    <TextView
+        android:id="@+id/tv_username"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="thirteen"/>
+    <GridLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+        <Button
+            android:layout_width="85dp"
+            android:layout_height="75dp"
+            android:background="@drawable/button_border"
+            android:drawableTop="@drawable/huiyuan"
+            android:text="高级会员"
+            android:layout_marginLeft="35dp"
+            android:textColor="#AAA" />
+        <Button
+            android:layout_width="85dp"
+            android:layout_height="75dp"
+            android:background="@drawable/button_border"
+            android:drawableTop="@drawable/shezhi"
+            android:text="高级设置"
+            android:layout_marginLeft="35dp"
+            android:textColor="#AAA" />
+        <Button
+            android:layout_width="85dp"
+            android:layout_height="75dp"
+            android:background="@drawable/button_border"
+            android:drawableTop="@drawable/beifen"
+            android:text="数据备份"
+            android:layout_marginLeft="33dp"
+            android:textColor="#AAA" />
+    </GridLayout>
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+        <Button
+            android:layout_width="85dp"
+            android:layout_height="75dp"
+            android:background="@drawable/button_border"
+            android:drawableTop="@drawable/depositcard"
+            android:text="分类管理"
+            android:layout_marginLeft="35dp"
+            android:textColor="#AAA" />
+        <Button
+            android:layout_width="85dp"
+            android:layout_height="75dp"
+            android:background="@drawable/button_border"
+            android:drawableTop="@drawable/yusuan"
+            android:text="预算中心"
+            android:layout_marginLeft="35dp"
+            android:textColor="#AAA" />
+        <Button
+            android:layout_width="85dp"
+            android:layout_height="75dp"
+            android:background="@drawable/button_border"
+            android:drawableTop="@drawable/sousuo"
+            android:text="搜索条目"
+            android:layout_marginLeft="33dp"
+            android:textColor="#AAA" />
+    </GridLayout>
+    <GridLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+        <Button
+            android:layout_width="85dp"
+            android:layout_height="75dp"
+            android:background="@drawable/button_border"
+            android:drawableTop="@drawable/huansuan"
+            android:text="汇率换算"
+            android:layout_marginLeft="35dp"
+            android:textColor="#AAA" />
+        <Button
+            android:layout_width="85dp"
+            android:layout_height="75dp"
+            android:background="@drawable/button_border"
+            android:drawableTop="@drawable/tongxun"
+            android:text="同一作者"
+            android:layout_marginLeft="35dp"
+            android:textColor="#AAA" />
+        <Button
+            android:layout_width="85dp"
+            android:layout_height="75dp"
+            android:background="@drawable/button_border"
+            android:drawableTop="@drawable/lianxi"
+            android:text="联系作者"
+            android:layout_marginLeft="33dp"
+            android:textColor="#AAA" />
+    </GridLayout>
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+        <Button
+            android:id="@+id/btn_audio_icon"
+            android:layout_width="85dp"
+            android:layout_height="75dp"
+            android:background="@drawable/button_border"
+            android:drawableTop="@drawable/fankui"
+            android:text="问题反馈"
+            android:layout_marginLeft="35dp"
+            android:textColor="#AAA" />
+        <Button
+            android:layout_width="85dp"
+            android:layout_height="75dp"
+            android:background="@drawable/button_border"
+            android:drawableTop="@drawable/weibo"
+            android:text="作者微博"
+            android:layout_marginLeft="35dp"
+            android:textColor="#AAA" />
+
+    </GridLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:id="@+id/main_body"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/white">
+        </FrameLayout>
+    </LinearLayout>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:background="#F2F2F2"
+        android:id="@+id/btn_group"
+        android:orientation="horizontal">
+        <RadioButton
+            style="@style/TabMenuItem"
+            android:drawableTop="@drawable/today"
+            android:id="@+id/btn_course"
+            android:text="TODAT"
+            android:textColor="#AAA"/>
+        <RadioButton
+            style="@style/TabMenuItem"
+            android:drawableTop="@drawable/tongji"
+            android:id="@+id/btn_execise"
+            android:text="统计" />
+        <RadioButton
+            style="@style/TabMenuItem"
+            android:drawableTop="@drawable/zichan"
+            android:id="@+id/btn_message"
+            android:text="资产" />
+        <RadioButton
+            style="@style/TabMenuItem"
+            android:drawableTop="@drawable/wode"
+            android:id="@+id/btn_my"
+            android:text="我的" />
+    </RadioGroup>
+
+</LinearLayout>
