@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".tabbar.Today">
+    tools:context=".tabbar.today.Today">
 
     <TextView
         android:layout_width="match_parent"
@@ -48,6 +48,7 @@
             android:gravity="center"
             android:textColor="#B1B1B1"/>
         <Button
+            android:id="@+id/btn_jisuanji"
             android:layout_marginTop="20dp"
             android:layout_width="150dp"
             android:layout_height="wrap_content"
@@ -57,6 +58,7 @@
             android:gravity="center"/>
 
         <TextView
+            android:id="@+id/tv_yingcang"
             android:layout_marginTop="20dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -95,16 +97,19 @@
             style="@style/TabMenuItem"
             android:drawableTop="@drawable/tongji"
             android:id="@+id/btn_execise"
-            android:text="统计" />
+            android:text="统计"
+            android:textColor="#aaa"/>
         <RadioButton
             style="@style/TabMenuItem"
             android:drawableTop="@drawable/zichan"
             android:id="@+id/btn_message"
-            android:text="资产" />
+            android:text="资产"
+            android:textColor="#aaa"/>
         <RadioButton
             style="@style/TabMenuItem"
             android:drawableTop="@drawable/wode"
             android:id="@+id/btn_my"
-            android:text="我的" />
+            android:text="我的"
+            android:textColor="#aaa"/>
     </RadioGroup>
 </LinearLayout>

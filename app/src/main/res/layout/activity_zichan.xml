@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".tabbar.Zichan">
+    tools:context=".tabbar.zichan.Zichan">
 
     <TextView
         android:id="@+id/tv_title"
@@ -25,13 +25,13 @@
         android:orientation="vertical">
 
         <TextView
-            android:layout_marginTop="100dp"
+            android:layout_marginTop="20dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
             android:textColor="#A1DECE"
             android:textSize="20dp"
-            android:text="今日支出" />
+            android:text="净资产" />
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -43,35 +43,182 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="收入￥0"
+            android:text="资产￥0"
+            android:textSize="18dp"
+            android:gravity="center"
+            android:textColor="#B1B1B1"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="负债￥0"
             android:textSize="18dp"
             android:gravity="center"
             android:textColor="#B1B1B1"/>
         <Button
-            android:layout_marginTop="40dp"
+            android:id="@+id/zhanghu"
+            android:layout_marginTop="10dp"
             android:layout_width="150dp"
-            android:layout_height="wrap_content"
+            android:layout_height="30dp"
             android:textSize="20dp"
-            android:text="记一笔"
+            android:text="增加资产/负债"
+            android:textColor="#FFF"
             android:background="@drawable/textview_border"
             android:gravity="center"/>
 
         <TextView
-            android:layout_marginTop="40dp"
+            android:layout_marginTop="10dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:gravity="center"
-            android:text="隐藏近三十日账单（63）v"/>
+            android:gravity="left"
+            android:background="#F2F2F2"
+            android:text="    总资产￥0"
+            android:textSize="15dp"/>
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_marginLeft="15dp"
+                android:id="@+id/iv_pic"
+                android:src="@drawable/cash"
+                android:layout_width="30dp"
+                android:layout_height="30dp"/>
+            <TextView
+                android:id="@+id/tv_name"
 
-        <Button
-            android:layout_marginTop="30dp"
-            android:layout_width="120dp"
+                android:layout_marginLeft="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="现金    "
+                android:textSize="20dp"
+                android:textColor="#000000"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginStart="10dp"
+                android:orientation="vertical"
+                android:layout_marginLeft="100dp">
+                <TextView
+                    android:layout_marginLeft="230dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="￥0"
+                    android:textColor="#A1FECE"
+                    android:textSize="15dp"
+                    android:textStyle="bold"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/tv_price"
+                        android:layout_marginLeft="230dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="1000"
+                        android:textSize="10sp"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_marginLeft="15dp"
+                android:src="@drawable/depositcard"
+                android:layout_width="30dp"
+                android:layout_height="30dp"/>
+            <TextView
+                android:layout_marginLeft="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="储蓄卡"
+                android:textSize="20dp"
+                android:textColor="#000000"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginStart="10dp"
+                android:orientation="vertical"
+                android:layout_marginLeft="100dp">
+                <TextView
+                    android:layout_marginLeft="230dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="￥0"
+                    android:textColor="#A1FECE"
+                    android:textSize="15dp"
+                    android:textStyle="bold"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_marginLeft="230dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="1000"
+                        android:textSize="10sp"/>
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_marginLeft="15dp"
+                android:src="@drawable/creditcard"
+                android:layout_width="30dp"
+                android:layout_height="30dp"/>
+            <TextView
+
+                android:layout_marginLeft="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="信用卡"
+                android:textSize="20dp"
+                android:textColor="#000000"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginStart="10dp"
+                android:orientation="vertical"
+                android:layout_marginLeft="100dp">
+                <TextView
+                    android:layout_marginLeft="230dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="￥0"
+                    android:textColor="#A1FECE"
+                    android:textSize="15dp"
+                    android:textStyle="bold"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_marginLeft="230dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="1000"
+                        android:textSize="10sp"/>
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="20dp"
-            android:text="查看详情"
-            android:background="@drawable/textview_border"
-            android:gravity="center"/>
-
+            android:gravity="left"
+            android:background="#F2F2F2"
+            android:text="    负债￥0"
+            android:textSize="15dp"/>
 
         <FrameLayout
             android:id="@+id/main_body"
@@ -99,16 +246,19 @@
             style="@style/TabMenuItem"
             android:drawableTop="@drawable/tongji"
             android:id="@+id/btn_execise"
-            android:text="统计" />
+            android:text="统计"
+            android:textColor="#aaa"/>
         <RadioButton
             style="@style/TabMenuItem"
             android:drawableTop="@drawable/zichan"
             android:id="@+id/btn_message"
-            android:text="资产" />
+            android:text="资产"
+            android:textColor="#aaa"/>
         <RadioButton
             style="@style/TabMenuItem"
             android:drawableTop="@drawable/wode"
             android:id="@+id/btn_my"
-            android:text="我的" />
+            android:text="我的"
+            android:textColor="#aaa"/>
     </RadioGroup>
 </LinearLayout>

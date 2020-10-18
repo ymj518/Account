@@ -1,4 +1,4 @@
-package com.example.account.tabbar;
+package com.example.account.tabbar.today;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -12,6 +12,9 @@ import android.widget.ListView;
 import android.widget.TextView;
 
 import com.example.account.R;
+import com.example.account.tabbar.Tongji;
+import com.example.account.tabbar.zichan.Zichan;
+import com.example.account.tabbar.setting.Setting;
 
 
 public class Today extends AppCompatActivity implements View.OnClickListener  {
@@ -30,6 +33,7 @@ private int[] icons = {R.drawable.canyin,R.drawable.yule,
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        overridePendingTransition(0, 0);
         setContentView(R.layout.activity_today);
         ListView listView = findViewById(R.id.lv);
         MyBaseAdapter adapter = new MyBaseAdapter();
@@ -39,8 +43,10 @@ private int[] icons = {R.drawable.canyin,R.drawable.yule,
         findViewById(R.id.btn_execise).setOnClickListener(this);
         findViewById(R.id.btn_message).setOnClickListener(this);
         findViewById(R.id.btn_my).setOnClickListener(this);
+        findViewById(R.id.btn_jisuanji).setOnClickListener(this);
+        findViewById(R.id.tv_yingcang).setOnClickListener(this);
     }
-class MyBaseAdapter extends BaseAdapter{
+public class MyBaseAdapter extends BaseAdapter{
 
     @Override
     public int getCount() {  //获取item总数
@@ -81,18 +87,32 @@ class MyBaseAdapter extends BaseAdapter{
             case R.id.btn_course:
                 Intent intent = new Intent(this, Today.class);
                 startActivity(intent);
+                overridePendingTransition(0, 0);
                 break;
             case R.id.btn_execise:
                 intent = new Intent(this, Tongji.class);
                 startActivity(intent);
+                overridePendingTransition(0, 0);
                 break;
             case R.id.btn_message:
                 intent = new Intent(this, Zichan.class);
                 startActivity(intent);
+                overridePendingTransition(0, 0);
                 break;
             case R.id.btn_my:
                 intent = new Intent(this, Setting.class);
                 startActivity(intent);
+                overridePendingTransition(0, 0);
+                break;
+            case R.id.btn_jisuanji:
+                intent = new Intent(this, Jsq.class);
+                startActivity(intent);
+                overridePendingTransition(0, 0);
+                break;
+            case R.id.tv_yingcang:
+                intent = new Intent(this, Yingcang.class);
+                startActivity(intent);
+                overridePendingTransition(0, 0);
                 break;
         }
     }

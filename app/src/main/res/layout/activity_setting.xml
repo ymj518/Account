@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:gravity="center"
-    tools:context=".tabbar.Setting">
+    tools:context=".tabbar.setting.Setting">
 
     <TextView
         android:layout_width="match_parent"
@@ -177,17 +177,20 @@
             style="@style/TabMenuItem"
             android:drawableTop="@drawable/tongji"
             android:id="@+id/btn_execise"
-            android:text="统计" />
+            android:text="统计"
+            android:textColor="#aaa"/>
         <RadioButton
             style="@style/TabMenuItem"
             android:drawableTop="@drawable/zichan"
             android:id="@+id/btn_message"
-            android:text="资产" />
+            android:text="资产"
+            android:textColor="#aaa"/>
         <RadioButton
             style="@style/TabMenuItem"
             android:drawableTop="@drawable/wode"
             android:id="@+id/btn_my"
-            android:text="我的" />
+            android:text="我的"
+            android:textColor="#aaa"/>
     </RadioGroup>
 
 </LinearLayout>

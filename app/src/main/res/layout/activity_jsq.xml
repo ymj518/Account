@@ -1,0 +1,480 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".tabbar.today.Jsq" >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="59dp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:text="记一笔帐"
+        android:background="#F8F9F4"
+        android:textSize="30sp" />
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+        <Button
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/button_border"
+            android:drawableTop="@drawable/canyin"
+            android:text="餐饮"
+            android:textColor="#AAA" />
+        <Button
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/button_border"
+            android:drawableTop="@drawable/yanjiu"
+            android:text="烟酒"
+            android:textColor="#AAA" />
+        <Button
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/button_border"
+            android:drawableTop="@drawable/chongwu"
+            android:text="宠物"
+            android:textColor="#AAA" />
+        <Button
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/button_border"
+            android:drawableTop="@drawable/shejiao"
+            android:text="社交"
+            android:textColor="#AAA" />
+        <Button
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/button_border"
+            android:drawableTop="@drawable/yule"
+            android:text="娱乐"
+            android:textColor="#AAA" />
+        <Button
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/button_border"
+            android:drawableTop="@drawable/zhangbei"
+            android:text="长辈"
+            android:textColor="#AAA" />
+
+    </GridLayout>
+    <GridLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+        <Button
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/button_border"
+            android:drawableTop="@drawable/fangdai"
+            android:text="房贷"
+            android:textColor="#AAA" />
+        <Button
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/button_border"
+            android:drawableTop="@drawable/zhufang"
+            android:text="住房"
+            android:textColor="#AAA" />
+        <Button
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/button_border"
+            android:drawableTop="@drawable/shuji"
+            android:text="书籍"
+            android:textColor="#AAA" />
+        <Button
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/button_border"
+            android:drawableTop="@drawable/jiaotong"
+            android:text="交通"
+            android:textColor="#AAA" />
+        <Button
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/button_border"
+            android:drawableTop="@drawable/caipiao"
+            android:text="彩票"
+            android:textColor="#AAA" />
+        <Button
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/button_border"
+            android:drawableTop="@drawable/tongxun"
+            android:text="通讯"
+            android:textColor="#AAA" />
+
+    </GridLayout>
+    <GridLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+        <Button
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/button_border"
+            android:drawableTop="@drawable/muyin"
+            android:text="母婴"
+            android:textColor="#AAA" />
+        <Button
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/button_border"
+            android:drawableTop="@drawable/yifu"
+            android:text="服饰"
+            android:textColor="#AAA" />
+        <Button
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/button_border"
+            android:drawableTop="@drawable/riyong"
+            android:text="日用"
+            android:textColor="#AAA" />
+        <Button
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/button_border"
+            android:drawableTop="@drawable/yiliao"
+            android:text="医疗"
+            android:textColor="#AAA" />
+        <Button
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/button_border"
+            android:drawableTop="@drawable/lvxing"
+            android:text="旅行"
+            android:textColor="#AAA" />
+        <Button
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/button_border"
+            android:drawableTop="@drawable/guoshu"
+            android:text="果蔬"
+            android:textColor="#AAA" />
+
+    </GridLayout>
+    <GridLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+        <Button
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/button_border"
+            android:drawableTop="@drawable/meirong"
+            android:text="美容"
+            android:textColor="#AAA" />
+        <Button
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/button_border"
+            android:drawableTop="@drawable/qiche"
+            android:text="汽车"
+            android:textColor="#AAA" />
+        <Button
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/button_border"
+            android:drawableTop="@drawable/shuma"
+            android:text="数码"
+            android:textColor="#AAA" />
+        <Button
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/button_border"
+            android:drawableTop="@drawable/linshi"
+            android:text="零食"
+            android:textColor="#AAA" />
+        <Button
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/button_border"
+            android:drawableTop="@drawable/canyin"
+            android:text="餐饮"
+            android:textColor="#AAA" />
+        <Button
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/button_border"
+            android:drawableTop="@drawable/yanjiu"
+            android:text="烟酒"
+            android:textColor="#AAA" />
+
+    </GridLayout>
+<LinearLayout
+    android:id="@+id/ll_content"
+    android:layout_marginTop="00dp"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="1"
+    android:gravity="center"
+    android:background="@drawable/textview_border"
+    android:orientation="vertical">
+    <EditText
+        android:id="@+id/etInput"
+        android:layout_width="310dp"
+        android:layout_height="30dip"
+    android:gravity="right"
+    android:layout_gravity="center"
+    android:background="@drawable/button_border"/> <!-- 设置输入框的背景，为一个xml文件 -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal" >  <!-- 代表水平排布 -->
+
+        <Button
+            android:id="@+id/btClear"
+            android:background="@drawable/button_border"
+        android:layout_width="75dp"
+        android:layout_height="30dp"
+        android:textSize="20sp"
+        android:text="C" />
+        <Button
+            android:id="@+id/btDel"
+            android:background="@drawable/button_border"
+            android:layout_marginLeft="5dp"
+            android:layout_width="75dp"
+            android:layout_height="30dp"
+            android:textSize="20sp"
+            android:text="DEL" />
+        <Button
+            android:id="@+id/btDivide"
+            android:background="@drawable/button_border"
+            android:layout_marginLeft="5dp"
+            android:layout_width="75dp"
+            android:layout_height="30dp"
+            android:textSize="20sp"
+            android:text="/" />
+        <Button
+            android:id="@+id/btMul"
+            android:background="@drawable/button_border"
+            android:layout_marginLeft="5dp"
+            android:layout_width="75dp"
+            android:layout_height="30dp"
+            android:textSize="20sp"
+            android:text="*" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btSeven"
+            android:background="@drawable/button_border"
+            android:layout_width="75dp"
+            android:layout_height="30dp"
+            android:textSize="20sp"
+            android:text="7" />
+        <Button
+            android:id="@+id/btEight"
+            android:background="@drawable/button_border"
+            android:layout_marginLeft="5dp"
+            android:layout_width="75dp"
+            android:layout_height="30dp"
+            android:textSize="20sp"
+            android:text="8" />
+        <Button
+            android:id="@+id/btNine"
+            android:background="@drawable/button_border"
+            android:layout_marginLeft="5dp"
+            android:layout_width="75dp"
+            android:layout_height="30dp"
+            android:textSize="20sp"
+            android:text="9" />
+        <Button
+            android:id="@+id/btJian"
+            android:background="@drawable/button_border"
+            android:layout_marginLeft="5dp"
+            android:layout_width="75dp"
+            android:layout_height="30dp"
+            android:textSize="20sp"
+            android:text="-" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btFour"
+            android:background="@drawable/button_border"
+            android:layout_width="75dp"
+            android:layout_height="30dp"
+            android:textSize="20sp"
+            android:text="4" />
+        <Button
+            android:id="@+id/btFive"
+            android:background="@drawable/button_border"
+            android:layout_marginLeft="5dp"
+            android:layout_width="75dp"
+            android:layout_height="30dp"
+            android:textSize="20sp"
+            android:text="5" />
+        <Button
+            android:id="@+id/btSix"
+            android:background="@drawable/button_border"
+            android:layout_marginLeft="5dp"
+            android:layout_width="75dp"
+            android:layout_height="30dp"
+            android:textSize="20sp"
+            android:text="6" />
+        <Button
+            android:id="@+id/btJia"
+            android:background="@drawable/button_border"
+            android:layout_marginLeft="5dp"
+            android:layout_width="75dp"
+            android:layout_height="30dp"
+            android:textSize="20sp"
+            android:text="+" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal" >
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+                <Button
+                    android:id="@+id/btOne"
+                    android:background="@drawable/button_border"
+                    android:layout_width="75dp"
+                    android:layout_height="30dp"
+                    android:textSize="20sp"
+                    android:text="1" />
+                <Button
+                    android:id="@+id/btTwo"
+                    android:background="@drawable/button_border"
+                    android:layout_marginLeft="5dp"
+                    android:layout_width="75dp"
+                    android:layout_height="30dp"
+                    android:textSize="20sp"
+                    android:text="2" />
+                <Button
+                    android:id="@+id/btThree"
+                    android:background="@drawable/button_border"
+                    android:layout_marginLeft="5dp"
+                    android:layout_width="75dp"
+                    android:layout_height="30dp"
+                    android:textSize="20sp"
+                    android:text="3" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal" >
+                <Button
+                    android:id="@+id/btZero"
+                    android:background="@drawable/button_border"
+                    android:layout_width="155dp"
+                    android:layout_height="30dp"
+                    android:textSize="20sp"
+                    android:text="0" />
+                <Button
+                    android:id="@+id/btPoint"
+                    android:background="@drawable/button_border"
+                    android:layout_marginLeft="5dp"
+                    android:layout_width="75dp"
+                    android:layout_height="30dp"
+                    android:textSize="20sp"
+                    android:text="." />
+            </LinearLayout>
+        </LinearLayout>
+        <Button
+            android:layout_width="75dp"
+            android:background="@drawable/button_border"
+            android:layout_height="65dp"
+            android:text="="
+            android:layout_marginLeft="5dp"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:id="@+id/btEqu">
+        </Button>
+
+    </LinearLayout>
+</LinearLayout>
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:background="#F2F2F2"
+        android:id="@+id/btn_group"
+        android:orientation="horizontal">
+        <RadioButton
+            style="@style/TabMenuItem"
+            android:drawableTop="@drawable/today"
+            android:id="@+id/btn_course"
+            android:text="TODAT"
+            android:textColor="#AAA"/>
+        <RadioButton
+            style="@style/TabMenuItem"
+            android:drawableTop="@drawable/tongji"
+            android:id="@+id/btn_execise"
+            android:text="统计"
+            android:textColor="#aaa"/>
+        <RadioButton
+            style="@style/TabMenuItem"
+            android:drawableTop="@drawable/zichan"
+            android:id="@+id/btn_message"
+            android:text="资产"
+            android:textColor="#aaa"/>
+        <RadioButton
+            style="@style/TabMenuItem"
+            android:drawableTop="@drawable/wode"
+            android:id="@+id/btn_my"
+            android:text="我的"
+            android:textColor="#aaa"/>
+    </RadioGroup>
+</LinearLayout>
