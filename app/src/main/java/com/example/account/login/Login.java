@@ -1,5 +1,6 @@
 package com.example.account.login;
 
+
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -14,18 +15,25 @@ import android.widget.Toast;
 import com.example.account.R;
 import com.example.account.tabbar.setting.Setting;
 
-
-public class Login extends AppCompatActivity implements View.OnClickListener {
+public class Login extends AppCompatActivity {
+    //1.定义控件变量名称
     private EditText etUsername;
     private EditText etPassword;
     private CheckBox cbAutoLogin;
     private Button btnLogin;
 
+    /**
+     * 1.将Activity类与xml布局进行关联：setContentView
+     * 2.xml界面控件的初始化
+     * 设置按钮等的事件监听
+     * @param savedInstanceState
+     */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        overridePendingTransition(0, 0);
         setContentView(R.layout.activity_login);
+
+        //2.初始化控件对象
         etUsername = findViewById(R.id.et_name);
         etPassword = findViewById(R.id.et_password);
         cbAutoLogin = findViewById(R.id.ck_zd);
@@ -38,20 +46,6 @@ public class Login extends AppCompatActivity implements View.OnClickListener {
                 login();
             }
         });
-        //靠id关联和映射  给btn1赋值，即设置布局文件中的Button按钮id进行关联
-        findViewById(R.id.btn_input).setOnClickListener(this);
-    }
-
-
-    @Override
-    public void onClick(View v) {
-        switch (v.getId()) {
-            case R.id.btn_input:
-                Intent intent = new Intent(this, Setting.class);
-                startActivity(intent);
-                overridePendingTransition(0, 0);
-                break;
-        }
     }
 
     private void login(){
@@ -67,7 +61,7 @@ public class Login extends AppCompatActivity implements View.OnClickListener {
         if("android".equals(username) && "123456".equals(password)){
             Toast.makeText(this,"登陆成功",Toast.LENGTH_LONG).show();
 
-            Intent intent = new Intent(this,Setting.class);
+            Intent intent = new Intent(this, Setting.class);
             intent.putExtra("username",username);
             startActivity(intent);
         }else{

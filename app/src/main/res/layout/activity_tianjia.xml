@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".tabbar.zichan.Tianjia"
+    android:orientation="vertical"
+    android:background="#FFF">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#F2F2F2">
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_marginLeft="15dp"
+            android:src="@drawable/arrow"
+            android:layout_width="30dp"
+            android:layout_height="30dp"/>
+        <TextView
+            android:gravity="center"
+            android:layout_marginLeft="120dp"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="添加账户    "
+            android:textSize="20dp" />
+        <TextView
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="100dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="保存"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:orientation="vertical"
+        android:gravity="center">
+    <ImageView
+        android:layout_marginTop="10dp"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_gravity="center"
+        android:src="@drawable/touxiang"/>
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="thirteen"/>
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFF">
+            <TextView
+                android:layout_marginLeft="15dp"
+                android:text="类型："
+                android:layout_width="50dp"
+                android:layout_height="30dp"/>
+            <TextView
+                android:id="@+id/leixing"
+                android:layout_marginLeft="20dp"
+                android:gravity="center"
+                android:background="@drawable/button_border"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="现金    "
+                android:textSize="20dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFF">
+            <TextView
+                android:layout_marginLeft="15dp"
+                android:text="名称："
+                android:layout_width="50dp"
+                android:layout_height="30dp"/>
+            <TextView
+                android:layout_marginLeft="20dp"
+                android:gravity="center"
+                android:background="@drawable/button_border"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="    "
+                android:textSize="20dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFF">
+            <TextView
+                android:layout_marginLeft="15dp"
+                android:text="余额："
+                android:layout_width="50dp"
+                android:layout_height="30dp"/>
+            <TextView
+                android:layout_marginLeft="20dp"
+                android:gravity="center"
+                android:background="@drawable/button_border"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=".00    "
+                android:textSize="20dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFF">
+            <TextView
+                android:layout_marginLeft="15dp"
+                android:text="币种："
+                android:layout_width="50dp"
+                android:layout_height="30dp"/>
+            <TextView
+                android:layout_marginLeft="20dp"
+                android:gravity="center"
+                android:background="@drawable/button_border"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="币种：人民币    "
+                android:textColor="#000"
+                android:textSize="20dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff">
+            <TextView
+                android:layout_marginLeft="15dp"
+                android:text="备注："
+                android:layout_width="50dp"
+                android:layout_height="30dp"/>
+            <TextView
+                android:layout_marginLeft="20dp"
+                android:gravity="center"
+                android:background="@drawable/button_border"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="还款日等    "
+                android:textSize="20dp" />
+        </LinearLayout>
+</LinearLayout>
+</LinearLayout>

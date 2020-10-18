@@ -9,10 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
-        <activity android:name=".tabbar.zichan.Zhanghu">
-        </activity>
+        <activity android:name=".tabbar.zichan.Tianjia"></activity>
+        <activity android:name=".tabbar.zichan.Zhanghu"></activity>
         <activity android:name=".tabbar.today.Yingcang" />
-        <activity android:name=".tabbar.today.Jsq"></activity>
+        <activity android:name=".tabbar.today.Jsq" />
         <activity android:name=".tabbar.zichan.Zichan" />
         <activity android:name=".login.MainActivity" />
         <activity android:name=".tabbar.setting.Setting" />

@@ -13,7 +13,7 @@
         android:layout_height="59dp"
         android:gravity="center"
         android:textStyle="bold"
-        android:text="TODAY"
+        android:text="账户"
         android:textSize="30sp" />
     <LinearLayout
         android:id="@+id/ll_content"
