@@ -295,7 +295,7 @@ public class Tongji extends AppCompatActivity implements View.OnClickListener  {
                 overridePendingTransition(0, 0);
                 break;
             case R.id.tv_time:
-                intent = new Intent(this, Setting.class);
+                intent = new Intent(this, Yuedu.class);
                 startActivity(intent);
                 overridePendingTransition(0, 0);
                 break;

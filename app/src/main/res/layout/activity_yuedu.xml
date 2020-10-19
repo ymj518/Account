@@ -4,17 +4,18 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-
     tools:context=".tongji.Yuedu">
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        >
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#F7F8F3"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:background="#F7F8F3">
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -44,43 +45,1202 @@
         <LinearLayout
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal" >  <!-- 代表水平排布 -->
+            <Button
+                style="?android:attr/borderlessButtonStyle"
+                android:background="#F7F8F3"
+                android:layout_width="75dp"
+                android:layout_height="30dp"
+                android:textSize="20sp"
+                android:text="2020"
+                android:textColor="#aaa"/>
+            <Button
+                style="?android:attr/borderlessButtonStyle"
+                android:background="@drawable/white"
+                android:layout_marginLeft="5dp"
+                android:layout_width="75dp"
+                android:layout_height="30dp"
+                android:textSize="20sp"
+                android:text="1月" />
+            <Button
+                style="?android:attr/borderlessButtonStyle"
+                android:background="@drawable/white"
+                android:layout_marginLeft="5dp"
+                android:layout_width="75dp"
+                android:layout_height="30dp"
+                android:textSize="20sp"
+                android:text="2月" />
+            <Button
+                style="?android:attr/borderlessButtonStyle"
+                android:background="@drawable/white"
+                android:layout_marginLeft="5dp"
+                android:layout_width="75dp"
+                android:layout_height="30dp"
+                android:textSize="20sp"
+                android:text="2月" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
             android:gravity="center_horizontal"
             android:orientation="horizontal" >  <!-- 代表水平排布 -->
-
             <Button
                 style="?android:attr/borderlessButtonStyle"
-                android:id="@+id/btClear"
-                android:background="@drawable/button_border"
+                android:background="@drawable/white"
                 android:layout_width="75dp"
                 android:layout_height="30dp"
                 android:textSize="20sp"
-                android:text="C" />
+                android:text="4月" />
             <Button
-                android:id="@+id/btDel"
-                android:background="@drawable/button_border"
+                style="?android:attr/borderlessButtonStyle"
+                android:background="@drawable/white"
                 android:layout_marginLeft="5dp"
                 android:layout_width="75dp"
                 android:layout_height="30dp"
                 android:textSize="20sp"
-                android:text="DEL" />
+                android:text="5月" />
             <Button
-                android:id="@+id/btDivide"
-                android:background="@drawable/button_border"
+                style="?android:attr/borderlessButtonStyle"
+                android:background="@drawable/white"
                 android:layout_marginLeft="5dp"
                 android:layout_width="75dp"
                 android:layout_height="30dp"
                 android:textSize="20sp"
-                android:text="/" />
+                android:text="6月" />
             <Button
-                android:id="@+id/btMul"
-                android:background="@drawable/button_border"
+                style="?android:attr/borderlessButtonStyle"
+                android:background="@drawable/white"
                 android:layout_marginLeft="5dp"
                 android:layout_width="75dp"
                 android:layout_height="30dp"
                 android:textSize="20sp"
-                android:text="*" />
+                android:text="7月" />
         </LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal" >  <!-- 代表水平排布 -->
+            <Button
+                style="?android:attr/borderlessButtonStyle"
+                android:background="@drawable/white"
+                android:layout_width="75dp"
+                android:layout_height="30dp"
+                android:textSize="20sp"
+                android:text="8月" />
+            <Button
+                style="?android:attr/borderlessButtonStyle"
+                android:background="@drawable/white"
+                android:layout_marginLeft="5dp"
+                android:layout_width="75dp"
+                android:layout_height="30dp"
+                android:textSize="20sp"
+                android:text="9月" />
+            <Button
+                style="?android:attr/borderlessButtonStyle"
+                android:background="@drawable/white"
+                android:layout_marginLeft="5dp"
+                android:layout_width="75dp"
+                android:layout_height="30dp"
+                android:textSize="20sp"
+                android:text="10月" />
+            <Button
+                style="?android:attr/borderlessButtonStyle"
+                android:background="@drawable/button_border"
+                android:layout_marginLeft="5dp"
+                android:layout_width="75dp"
+                android:layout_height="30dp"
+                android:textSize="20sp"
+                android:text="11月" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal" >  <!-- 代表水平排布 -->
+            <Button
+                style="?android:attr/borderlessButtonStyle"
+                android:background="@drawable/white"
+                android:layout_width="75dp"
+                android:layout_height="30dp"
+                android:textSize="20sp"
+                android:text="12月" />
+            <Button
+                style="?android:attr/borderlessButtonStyle"
+                android:background="@drawable/white"
+                android:layout_marginLeft="5dp"
+                android:layout_width="75dp"
+                android:layout_height="30dp"
+                android:textSize="20sp"
+                android:text="全年" />
+            <Button
+                style="?android:attr/borderlessButtonStyle"
+                android:background="#F7F8F3"
+                android:layout_marginLeft="5dp"
+                android:layout_width="75dp"
+                android:layout_height="30dp" />
+            <Button
+                style="?android:attr/borderlessButtonStyle"
+                android:background="#F7F8F3"
+                android:layout_marginLeft="5dp"
+                android:layout_width="75dp"
+                android:layout_height="30dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal" >  <!-- 代表水平排布 -->
+            <Button
+                style="?android:attr/borderlessButtonStyle"
+                android:background="#F7F8F3"
+                android:layout_width="75dp"
+                android:layout_height="30dp"
+                android:textSize="20sp"
+                android:text="2019"
+                android:textColor="#aaa"/>
+            <Button
+                style="?android:attr/borderlessButtonStyle"
+                android:background="@drawable/white"
+                android:layout_marginLeft="5dp"
+                android:layout_width="75dp"
+                android:layout_height="30dp"
+                android:textSize="20sp"
+                android:text="1月" />
+            <Button
+                style="?android:attr/borderlessButtonStyle"
+                android:background="@drawable/white"
+                android:layout_marginLeft="5dp"
+                android:layout_width="75dp"
+                android:layout_height="30dp"
+                android:textSize="20sp"
+                android:text="2月" />
+            <Button
+                style="?android:attr/borderlessButtonStyle"
+                android:background="@drawable/white"
+                android:layout_marginLeft="5dp"
+                android:layout_width="75dp"
+                android:layout_height="30dp"
+                android:textSize="20sp"
+                android:text="2月" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal" >  <!-- 代表水平排布 -->
+            <Button
+                style="?android:attr/borderlessButtonStyle"
+                android:background="@drawable/white"
+                android:layout_width="75dp"
+                android:layout_height="30dp"
+                android:textSize="20sp"
+                android:text="4月" />
+            <Button
+                style="?android:attr/borderlessButtonStyle"
+                android:background="@drawable/white"
+                android:layout_marginLeft="5dp"
+                android:layout_width="75dp"
+                android:layout_height="30dp"
+                android:textSize="20sp"
+                android:text="5月" />
+            <Button
+                style="?android:attr/borderlessButtonStyle"
+                android:background="@drawable/white"
+                android:layout_marginLeft="5dp"
+                android:layout_width="75dp"
+                android:layout_height="30dp"
+                android:textSize="20sp"
+                android:text="6月" />
+            <Button
+                style="?android:attr/borderlessButtonStyle"
+                android:background="@drawable/white"
+                android:layout_marginLeft="5dp"
+                android:layout_width="75dp"
+                android:layout_height="30dp"
+                android:textSize="20sp"
+                android:text="7月" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal" >  <!-- 代表水平排布 -->
+            <Button
+                style="?android:attr/borderlessButtonStyle"
+                android:background="@drawable/white"
+                android:layout_width="75dp"
+                android:layout_height="30dp"
+                android:textSize="20sp"
+                android:text="8月" />
+            <Button
+                style="?android:attr/borderlessButtonStyle"
+                android:background="@drawable/white"
+                android:layout_marginLeft="5dp"
+                android:layout_width="75dp"
+                android:layout_height="30dp"
+                android:textSize="20sp"
+                android:text="9月" />
+            <Button
+                style="?android:attr/borderlessButtonStyle"
+                android:background="@drawable/white"
+                android:layout_marginLeft="5dp"
+                android:layout_width="75dp"
+                android:layout_height="30dp"
+                android:textSize="20sp"
+                android:text="10月" />
+            <Button
+                style="?android:attr/borderlessButtonStyle"
+                android:background="@drawable/button_border"
+                android:layout_marginLeft="5dp"
+                android:layout_width="75dp"
+                android:layout_height="30dp"
+                android:textSize="20sp"
+                android:text="11月" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal" >  <!-- 代表水平排布 -->
+            <Button
+                style="?android:attr/borderlessButtonStyle"
+                android:background="@drawable/white"
+                android:layout_width="75dp"
+                android:layout_height="30dp"
+                android:textSize="20sp"
+                android:text="12月" />
+            <Button
+                style="?android:attr/borderlessButtonStyle"
+                android:background="@drawable/white"
+                android:layout_marginLeft="5dp"
+                android:layout_width="75dp"
+                android:layout_height="30dp"
+                android:textSize="20sp"
+                android:text="全年" />
+            <Button
+                style="?android:attr/borderlessButtonStyle"
+                android:background="#F7F8F3"
+                android:layout_marginLeft="5dp"
+                android:layout_width="75dp"
+                android:layout_height="30dp" />
+            <Button
+                style="?android:attr/borderlessButtonStyle"
+                android:background="#F7F8F3"
+                android:layout_marginLeft="5dp"
+                android:layout_width="75dp"
+                android:layout_height="30dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal" >  <!-- 代表水平排布 -->
+            <Button
+                style="?android:attr/borderlessButtonStyle"
+                android:background="#F7F8F3"
+                android:layout_width="75dp"
+                android:layout_height="30dp"
+                android:textSize="20sp"
+                android:text="2018"
+                android:textColor="#aaa"/>
+            <Button
+                style="?android:attr/borderlessButtonStyle"
+                android:background="@drawable/white"
+                android:layout_marginLeft="5dp"
+                android:layout_width="75dp"
+                android:layout_height="30dp"
+                android:textSize="20sp"
+                android:text="1月" />
+            <Button
+                style="?android:attr/borderlessButtonStyle"
+                android:background="@drawable/white"
+                android:layout_marginLeft="5dp"
+                android:layout_width="75dp"
+                android:layout_height="30dp"
+                android:textSize="20sp"
+                android:text="2月" />
+            <Button
+                style="?android:attr/borderlessButtonStyle"
+                android:background="@drawable/white"
+                android:layout_marginLeft="5dp"
+                android:layout_width="75dp"
+                android:layout_height="30dp"
+                android:textSize="20sp"
+                android:text="2月" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal" >  <!-- 代表水平排布 -->
+            <Button
+                style="?android:attr/borderlessButtonStyle"
+                android:background="@drawable/white"
+                android:layout_width="75dp"
+                android:layout_height="30dp"
+                android:textSize="20sp"
+                android:text="4月" />
+            <Button
+                style="?android:attr/borderlessButtonStyle"
+                android:background="@drawable/white"
+                android:layout_marginLeft="5dp"
+                android:layout_width="75dp"
+                android:layout_height="30dp"
+                android:textSize="20sp"
+                android:text="5月" />
+            <Button
+                style="?android:attr/borderlessButtonStyle"
+                android:background="@drawable/white"
+                android:layout_marginLeft="5dp"
+                android:layout_width="75dp"
+                android:layout_height="30dp"
+                android:textSize="20sp"
+                android:text="6月" />
+            <Button
+                style="?android:attr/borderlessButtonStyle"
+                android:background="@drawable/white"
+                android:layout_marginLeft="5dp"
+                android:layout_width="75dp"
+                android:layout_height="30dp"
+                android:textSize="20sp"
+                android:text="7月" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal" >  <!-- 代表水平排布 -->
+            <Button
+                style="?android:attr/borderlessButtonStyle"
+                android:background="@drawable/white"
+                android:layout_width="75dp"
+                android:layout_height="30dp"
+                android:textSize="20sp"
+                android:text="8月" />
+            <Button
+                style="?android:attr/borderlessButtonStyle"
+                android:background="@drawable/white"
+                android:layout_marginLeft="5dp"
+                android:layout_width="75dp"
+                android:layout_height="30dp"
+                android:textSize="20sp"
+                android:text="9月" />
+            <Button
+                style="?android:attr/borderlessButtonStyle"
+                android:background="@drawable/white"
+                android:layout_marginLeft="5dp"
+                android:layout_width="75dp"
+                android:layout_height="30dp"
+                android:textSize="20sp"
+                android:text="10月" />
+            <Button
+                style="?android:attr/borderlessButtonStyle"
+                android:background="@drawable/button_border"
+                android:layout_marginLeft="5dp"
+                android:layout_width="75dp"
+                android:layout_height="30dp"
+                android:textSize="20sp"
+                android:text="11月" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal" >  <!-- 代表水平排布 -->
+            <Button
+                style="?android:attr/borderlessButtonStyle"
+                android:background="@drawable/white"
+                android:layout_width="75dp"
+                android:layout_height="30dp"
+                android:textSize="20sp"
+                android:text="12月" />
+            <Button
+                style="?android:attr/borderlessButtonStyle"
+                android:background="@drawable/white"
+                android:layout_marginLeft="5dp"
+                android:layout_width="75dp"
+                android:layout_height="30dp"
+                android:textSize="20sp"
+                android:text="全年" />
+            <Button
+                style="?android:attr/borderlessButtonStyle"
+                android:background="#F7F8F3"
+                android:layout_marginLeft="5dp"
+                android:layout_width="75dp"
+                android:layout_height="30dp" />
+            <Button
+                style="?android:attr/borderlessButtonStyle"
+                android:background="#F7F8F3"
+                android:layout_marginLeft="5dp"
+                android:layout_width="75dp"
+                android:layout_height="30dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal" >  <!-- 代表水平排布 -->
+            <Button
+                style="?android:attr/borderlessButtonStyle"
+                android:background="#F7F8F3"
+                android:layout_width="75dp"
+                android:layout_height="30dp"
+                android:textSize="20sp"
+                android:text="2017"
+                android:textColor="#aaa"/>
+            <Button
+                style="?android:attr/borderlessButtonStyle"
+                android:background="@drawable/white"
+                android:layout_marginLeft="5dp"
+                android:layout_width="75dp"
+                android:layout_height="30dp"
+                android:textSize="20sp"
+                android:text="1月" />
+            <Button
+                style="?android:attr/borderlessButtonStyle"
+                android:background="@drawable/white"
+                android:layout_marginLeft="5dp"
+                android:layout_width="75dp"
+                android:layout_height="30dp"
+                android:textSize="20sp"
+                android:text="2月" />
+            <Button
+                style="?android:attr/borderlessButtonStyle"
+                android:background="@drawable/white"
+                android:layout_marginLeft="5dp"
+                android:layout_width="75dp"
+                android:layout_height="30dp"
+                android:textSize="20sp"
+                android:text="2月" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal" >  <!-- 代表水平排布 -->
+            <Button
+                style="?android:attr/borderlessButtonStyle"
+                android:background="@drawable/white"
+                android:layout_width="75dp"
+                android:layout_height="30dp"
+                android:textSize="20sp"
+                android:text="4月" />
+            <Button
+                style="?android:attr/borderlessButtonStyle"
+                android:background="@drawable/white"
+                android:layout_marginLeft="5dp"
+                android:layout_width="75dp"
+                android:layout_height="30dp"
+                android:textSize="20sp"
+                android:text="5月" />
+            <Button
+                style="?android:attr/borderlessButtonStyle"
+                android:background="@drawable/white"
+                android:layout_marginLeft="5dp"
+                android:layout_width="75dp"
+                android:layout_height="30dp"
+                android:textSize="20sp"
+                android:text="6月" />
+            <Button
+                style="?android:attr/borderlessButtonStyle"
+                android:background="@drawable/white"
+                android:layout_marginLeft="5dp"
+                android:layout_width="75dp"
+                android:layout_height="30dp"
+                android:textSize="20sp"
+                android:text="7月" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal" >  <!-- 代表水平排布 -->
+            <Button
+                style="?android:attr/borderlessButtonStyle"
+                android:background="@drawable/white"
+                android:layout_width="75dp"
+                android:layout_height="30dp"
+                android:textSize="20sp"
+                android:text="8月" />
+            <Button
+                style="?android:attr/borderlessButtonStyle"
+                android:background="@drawable/white"
+                android:layout_marginLeft="5dp"
+                android:layout_width="75dp"
+                android:layout_height="30dp"
+                android:textSize="20sp"
+                android:text="9月" />
+            <Button
+                style="?android:attr/borderlessButtonStyle"
+                android:background="@drawable/white"
+                android:layout_marginLeft="5dp"
+                android:layout_width="75dp"
+                android:layout_height="30dp"
+                android:textSize="20sp"
+                android:text="10月" />
+            <Button
+                style="?android:attr/borderlessButtonStyle"
+                android:background="@drawable/button_border"
+                android:layout_marginLeft="5dp"
+                android:layout_width="75dp"
+                android:layout_height="30dp"
+                android:textSize="20sp"
+                android:text="11月" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal" >  <!-- 代表水平排布 -->
+            <Button
+                style="?android:attr/borderlessButtonStyle"
+                android:background="@drawable/white"
+                android:layout_width="75dp"
+                android:layout_height="30dp"
+                android:textSize="20sp"
+                android:text="12月" />
+            <Button
+                style="?android:attr/borderlessButtonStyle"
+                android:background="@drawable/white"
+                android:layout_marginLeft="5dp"
+                android:layout_width="75dp"
+                android:layout_height="30dp"
+                android:textSize="20sp"
+                android:text="全年" />
+            <Button
+                style="?android:attr/borderlessButtonStyle"
+                android:background="#F7F8F3"
+                android:layout_marginLeft="5dp"
+                android:layout_width="75dp"
+                android:layout_height="30dp" />
+            <Button
+                style="?android:attr/borderlessButtonStyle"
+                android:background="#F7F8F3"
+                android:layout_marginLeft="5dp"
+                android:layout_width="75dp"
+                android:layout_height="30dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal" >  <!-- 代表水平排布 -->
+            <Button
+                style="?android:attr/borderlessButtonStyle"
+                android:background="#F7F8F3"
+                android:layout_width="75dp"
+                android:layout_height="30dp"
+                android:textSize="20sp"
+                android:text="2016"
+                android:textColor="#aaa"/>
+            <Button
+                style="?android:attr/borderlessButtonStyle"
+                android:background="@drawable/white"
+                android:layout_marginLeft="5dp"
+                android:layout_width="75dp"
+                android:layout_height="30dp"
+                android:textSize="20sp"
+                android:text="1月" />
+            <Button
+                style="?android:attr/borderlessButtonStyle"
+                android:background="@drawable/white"
+                android:layout_marginLeft="5dp"
+                android:layout_width="75dp"
+                android:layout_height="30dp"
+                android:textSize="20sp"
+                android:text="2月" />
+            <Button
+                style="?android:attr/borderlessButtonStyle"
+                android:background="@drawable/white"
+                android:layout_marginLeft="5dp"
+                android:layout_width="75dp"
+                android:layout_height="30dp"
+                android:textSize="20sp"
+                android:text="2月" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal" >  <!-- 代表水平排布 -->
+            <Button
+                style="?android:attr/borderlessButtonStyle"
+                android:background="@drawable/white"
+                android:layout_width="75dp"
+                android:layout_height="30dp"
+                android:textSize="20sp"
+                android:text="4月" />
+            <Button
+                style="?android:attr/borderlessButtonStyle"
+                android:background="@drawable/white"
+                android:layout_marginLeft="5dp"
+                android:layout_width="75dp"
+                android:layout_height="30dp"
+                android:textSize="20sp"
+                android:text="5月" />
+            <Button
+                style="?android:attr/borderlessButtonStyle"
+                android:background="@drawable/white"
+                android:layout_marginLeft="5dp"
+                android:layout_width="75dp"
+                android:layout_height="30dp"
+                android:textSize="20sp"
+                android:text="6月" />
+            <Button
+                style="?android:attr/borderlessButtonStyle"
+                android:background="@drawable/white"
+                android:layout_marginLeft="5dp"
+                android:layout_width="75dp"
+                android:layout_height="30dp"
+                android:textSize="20sp"
+                android:text="7月" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal" >  <!-- 代表水平排布 -->
+            <Button
+                style="?android:attr/borderlessButtonStyle"
+                android:background="@drawable/white"
+                android:layout_width="75dp"
+                android:layout_height="30dp"
+                android:textSize="20sp"
+                android:text="8月" />
+            <Button
+                style="?android:attr/borderlessButtonStyle"
+                android:background="@drawable/white"
+                android:layout_marginLeft="5dp"
+                android:layout_width="75dp"
+                android:layout_height="30dp"
+                android:textSize="20sp"
+                android:text="9月" />
+            <Button
+                style="?android:attr/borderlessButtonStyle"
+                android:background="@drawable/white"
+                android:layout_marginLeft="5dp"
+                android:layout_width="75dp"
+                android:layout_height="30dp"
+                android:textSize="20sp"
+                android:text="10月" />
+            <Button
+                style="?android:attr/borderlessButtonStyle"
+                android:background="@drawable/button_border"
+                android:layout_marginLeft="5dp"
+                android:layout_width="75dp"
+                android:layout_height="30dp"
+                android:textSize="20sp"
+                android:text="11月" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal" >  <!-- 代表水平排布 -->
+            <Button
+                style="?android:attr/borderlessButtonStyle"
+                android:background="@drawable/white"
+                android:layout_width="75dp"
+                android:layout_height="30dp"
+                android:textSize="20sp"
+                android:text="12月" />
+            <Button
+                style="?android:attr/borderlessButtonStyle"
+                android:background="@drawable/white"
+                android:layout_marginLeft="5dp"
+                android:layout_width="75dp"
+                android:layout_height="30dp"
+                android:textSize="20sp"
+                android:text="全年" />
+            <Button
+                style="?android:attr/borderlessButtonStyle"
+                android:background="#F7F8F3"
+                android:layout_marginLeft="5dp"
+                android:layout_width="75dp"
+                android:layout_height="30dp" />
+            <Button
+                style="?android:attr/borderlessButtonStyle"
+                android:background="#F7F8F3"
+                android:layout_marginLeft="5dp"
+                android:layout_width="75dp"
+                android:layout_height="30dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal" >  <!-- 代表水平排布 -->
+            <Button
+                style="?android:attr/borderlessButtonStyle"
+                android:background="#F7F8F3"
+                android:layout_width="75dp"
+                android:layout_height="30dp"
+                android:textSize="20sp"
+                android:text="2015"
+                android:textColor="#aaa"/>
+            <Button
+                style="?android:attr/borderlessButtonStyle"
+                android:background="@drawable/white"
+                android:layout_marginLeft="5dp"
+                android:layout_width="75dp"
+                android:layout_height="30dp"
+                android:textSize="20sp"
+                android:text="1月" />
+            <Button
+                style="?android:attr/borderlessButtonStyle"
+                android:background="@drawable/white"
+                android:layout_marginLeft="5dp"
+                android:layout_width="75dp"
+                android:layout_height="30dp"
+                android:textSize="20sp"
+                android:text="2月" />
+            <Button
+                style="?android:attr/borderlessButtonStyle"
+                android:background="@drawable/white"
+                android:layout_marginLeft="5dp"
+                android:layout_width="75dp"
+                android:layout_height="30dp"
+                android:textSize="20sp"
+                android:text="2月" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal" >  <!-- 代表水平排布 -->
+            <Button
+                style="?android:attr/borderlessButtonStyle"
+                android:background="@drawable/white"
+                android:layout_width="75dp"
+                android:layout_height="30dp"
+                android:textSize="20sp"
+                android:text="4月" />
+            <Button
+                style="?android:attr/borderlessButtonStyle"
+                android:background="@drawable/white"
+                android:layout_marginLeft="5dp"
+                android:layout_width="75dp"
+                android:layout_height="30dp"
+                android:textSize="20sp"
+                android:text="5月" />
+            <Button
+                style="?android:attr/borderlessButtonStyle"
+                android:background="@drawable/white"
+                android:layout_marginLeft="5dp"
+                android:layout_width="75dp"
+                android:layout_height="30dp"
+                android:textSize="20sp"
+                android:text="6月" />
+            <Button
+                style="?android:attr/borderlessButtonStyle"
+                android:background="@drawable/white"
+                android:layout_marginLeft="5dp"
+                android:layout_width="75dp"
+                android:layout_height="30dp"
+                android:textSize="20sp"
+                android:text="7月" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal" >  <!-- 代表水平排布 -->
+            <Button
+                style="?android:attr/borderlessButtonStyle"
+                android:background="@drawable/white"
+                android:layout_width="75dp"
+                android:layout_height="30dp"
+                android:textSize="20sp"
+                android:text="8月" />
+            <Button
+                style="?android:attr/borderlessButtonStyle"
+                android:background="@drawable/white"
+                android:layout_marginLeft="5dp"
+                android:layout_width="75dp"
+                android:layout_height="30dp"
+                android:textSize="20sp"
+                android:text="9月" />
+            <Button
+                style="?android:attr/borderlessButtonStyle"
+                android:background="@drawable/white"
+                android:layout_marginLeft="5dp"
+                android:layout_width="75dp"
+                android:layout_height="30dp"
+                android:textSize="20sp"
+                android:text="10月" />
+            <Button
+                style="?android:attr/borderlessButtonStyle"
+                android:background="@drawable/button_border"
+                android:layout_marginLeft="5dp"
+                android:layout_width="75dp"
+                android:layout_height="30dp"
+                android:textSize="20sp"
+                android:text="11月" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal" >  <!-- 代表水平排布 -->
+            <Button
+                style="?android:attr/borderlessButtonStyle"
+                android:background="@drawable/white"
+                android:layout_width="75dp"
+                android:layout_height="30dp"
+                android:textSize="20sp"
+                android:text="12月" />
+            <Button
+                style="?android:attr/borderlessButtonStyle"
+                android:background="@drawable/white"
+                android:layout_marginLeft="5dp"
+                android:layout_width="75dp"
+                android:layout_height="30dp"
+                android:textSize="20sp"
+                android:text="全年" />
+            <Button
+                style="?android:attr/borderlessButtonStyle"
+                android:background="#F7F8F3"
+                android:layout_marginLeft="5dp"
+                android:layout_width="75dp"
+                android:layout_height="30dp" />
+            <Button
+                style="?android:attr/borderlessButtonStyle"
+                android:background="#F7F8F3"
+                android:layout_marginLeft="5dp"
+                android:layout_width="75dp"
+                android:layout_height="30dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal" >  <!-- 代表水平排布 -->
+            <Button
+                style="?android:attr/borderlessButtonStyle"
+                android:background="#F7F8F3"
+                android:layout_width="75dp"
+                android:layout_height="30dp"
+                android:textSize="20sp"
+                android:text="2014"
+                android:textColor="#aaa"/>
+            <Button
+                style="?android:attr/borderlessButtonStyle"
+                android:background="@drawable/white"
+                android:layout_marginLeft="5dp"
+                android:layout_width="75dp"
+                android:layout_height="30dp"
+                android:textSize="20sp"
+                android:text="1月" />
+            <Button
+                style="?android:attr/borderlessButtonStyle"
+                android:background="@drawable/white"
+                android:layout_marginLeft="5dp"
+                android:layout_width="75dp"
+                android:layout_height="30dp"
+                android:textSize="20sp"
+                android:text="2月" />
+            <Button
+                style="?android:attr/borderlessButtonStyle"
+                android:background="@drawable/white"
+                android:layout_marginLeft="5dp"
+                android:layout_width="75dp"
+                android:layout_height="30dp"
+                android:textSize="20sp"
+                android:text="2月" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal" >  <!-- 代表水平排布 -->
+            <Button
+                style="?android:attr/borderlessButtonStyle"
+                android:background="@drawable/white"
+                android:layout_width="75dp"
+                android:layout_height="30dp"
+                android:textSize="20sp"
+                android:text="4月" />
+            <Button
+                style="?android:attr/borderlessButtonStyle"
+                android:background="@drawable/white"
+                android:layout_marginLeft="5dp"
+                android:layout_width="75dp"
+                android:layout_height="30dp"
+                android:textSize="20sp"
+                android:text="5月" />
+            <Button
+                style="?android:attr/borderlessButtonStyle"
+                android:background="@drawable/white"
+                android:layout_marginLeft="5dp"
+                android:layout_width="75dp"
+                android:layout_height="30dp"
+                android:textSize="20sp"
+                android:text="6月" />
+            <Button
+                style="?android:attr/borderlessButtonStyle"
+                android:background="@drawable/white"
+                android:layout_marginLeft="5dp"
+                android:layout_width="75dp"
+                android:layout_height="30dp"
+                android:textSize="20sp"
+                android:text="7月" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal" >  <!-- 代表水平排布 -->
+            <Button
+                style="?android:attr/borderlessButtonStyle"
+                android:background="@drawable/white"
+                android:layout_width="75dp"
+                android:layout_height="30dp"
+                android:textSize="20sp"
+                android:text="8月" />
+            <Button
+                style="?android:attr/borderlessButtonStyle"
+                android:background="@drawable/white"
+                android:layout_marginLeft="5dp"
+                android:layout_width="75dp"
+                android:layout_height="30dp"
+                android:textSize="20sp"
+                android:text="9月" />
+            <Button
+                style="?android:attr/borderlessButtonStyle"
+                android:background="@drawable/white"
+                android:layout_marginLeft="5dp"
+                android:layout_width="75dp"
+                android:layout_height="30dp"
+                android:textSize="20sp"
+                android:text="10月" />
+            <Button
+                style="?android:attr/borderlessButtonStyle"
+                android:background="@drawable/button_border"
+                android:layout_marginLeft="5dp"
+                android:layout_width="75dp"
+                android:layout_height="30dp"
+                android:textSize="20sp"
+                android:text="11月" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal" >  <!-- 代表水平排布 -->
+            <Button
+                style="?android:attr/borderlessButtonStyle"
+                android:background="@drawable/white"
+                android:layout_width="75dp"
+                android:layout_height="30dp"
+                android:textSize="20sp"
+                android:text="12月" />
+            <Button
+                style="?android:attr/borderlessButtonStyle"
+                android:background="@drawable/white"
+                android:layout_marginLeft="5dp"
+                android:layout_width="75dp"
+                android:layout_height="30dp"
+                android:textSize="20sp"
+                android:text="全年" />
+            <Button
+                style="?android:attr/borderlessButtonStyle"
+                android:background="#F7F8F3"
+                android:layout_marginLeft="5dp"
+                android:layout_width="75dp"
+                android:layout_height="30dp" />
+            <Button
+                style="?android:attr/borderlessButtonStyle"
+                android:background="#F7F8F3"
+                android:layout_marginLeft="5dp"
+                android:layout_width="75dp"
+                android:layout_height="30dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal" >  <!-- 代表水平排布 -->
+            <Button
+                style="?android:attr/borderlessButtonStyle"
+                android:background="#F7F8F3"
+                android:layout_width="75dp"
+                android:layout_height="30dp"
+                android:textSize="20sp"
+                android:text="2013"
+                android:textColor="#aaa"/>
+            <Button
+                style="?android:attr/borderlessButtonStyle"
+                android:background="@drawable/white"
+                android:layout_marginLeft="5dp"
+                android:layout_width="75dp"
+                android:layout_height="30dp"
+                android:textSize="20sp"
+                android:text="1月" />
+            <Button
+                style="?android:attr/borderlessButtonStyle"
+                android:background="@drawable/white"
+                android:layout_marginLeft="5dp"
+                android:layout_width="75dp"
+                android:layout_height="30dp"
+                android:textSize="20sp"
+                android:text="2月" />
+            <Button
+                style="?android:attr/borderlessButtonStyle"
+                android:background="@drawable/white"
+                android:layout_marginLeft="5dp"
+                android:layout_width="75dp"
+                android:layout_height="30dp"
+                android:textSize="20sp"
+                android:text="2月" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal" >  <!-- 代表水平排布 -->
+            <Button
+                style="?android:attr/borderlessButtonStyle"
+                android:background="@drawable/white"
+                android:layout_width="75dp"
+                android:layout_height="30dp"
+                android:textSize="20sp"
+                android:text="4月" />
+            <Button
+                style="?android:attr/borderlessButtonStyle"
+                android:background="@drawable/white"
+                android:layout_marginLeft="5dp"
+                android:layout_width="75dp"
+                android:layout_height="30dp"
+                android:textSize="20sp"
+                android:text="5月" />
+            <Button
+                style="?android:attr/borderlessButtonStyle"
+                android:background="@drawable/white"
+                android:layout_marginLeft="5dp"
+                android:layout_width="75dp"
+                android:layout_height="30dp"
+                android:textSize="20sp"
+                android:text="6月" />
+            <Button
+                style="?android:attr/borderlessButtonStyle"
+                android:background="@drawable/white"
+                android:layout_marginLeft="5dp"
+                android:layout_width="75dp"
+                android:layout_height="30dp"
+                android:textSize="20sp"
+                android:text="7月" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal" >  <!-- 代表水平排布 -->
+            <Button
+                style="?android:attr/borderlessButtonStyle"
+                android:background="@drawable/white"
+                android:layout_width="75dp"
+                android:layout_height="30dp"
+                android:textSize="20sp"
+                android:text="8月" />
+            <Button
+                style="?android:attr/borderlessButtonStyle"
+                android:background="@drawable/white"
+                android:layout_marginLeft="5dp"
+                android:layout_width="75dp"
+                android:layout_height="30dp"
+                android:textSize="20sp"
+                android:text="9月" />
+            <Button
+                style="?android:attr/borderlessButtonStyle"
+                android:background="@drawable/white"
+                android:layout_marginLeft="5dp"
+                android:layout_width="75dp"
+                android:layout_height="30dp"
+                android:textSize="20sp"
+                android:text="10月" />
+            <Button
+                style="?android:attr/borderlessButtonStyle"
+                android:background="@drawable/button_border"
+                android:layout_marginLeft="5dp"
+                android:layout_width="75dp"
+                android:layout_height="30dp"
+                android:textSize="20sp"
+                android:text="11月" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal" >  <!-- 代表水平排布 -->
+            <Button
+                style="?android:attr/borderlessButtonStyle"
+                android:background="@drawable/white"
+                android:layout_width="75dp"
+                android:layout_height="30dp"
+                android:textSize="20sp"
+                android:text="12月" />
+            <Button
+                style="?android:attr/borderlessButtonStyle"
+                android:background="@drawable/white"
+                android:layout_marginLeft="5dp"
+                android:layout_width="75dp"
+                android:layout_height="30dp"
+                android:textSize="20sp"
+                android:text="全年" />
+            <Button
+                style="?android:attr/borderlessButtonStyle"
+                android:background="#F7F8F3"
+                android:layout_marginLeft="5dp"
+                android:layout_width="75dp"
+                android:layout_height="30dp" />
+            <Button
+                style="?android:attr/borderlessButtonStyle"
+                android:background="#F7F8F3"
+                android:layout_marginLeft="5dp"
+                android:layout_width="75dp"
+                android:layout_height="30dp" />
+        </LinearLayout>
+
+
+
+
+
+
+
 </LinearLayout>
     </ScrollView>
 </LinearLayout>
