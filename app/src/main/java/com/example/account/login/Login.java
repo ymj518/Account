@@ -14,6 +14,7 @@ import android.widget.Toast;
 
 import com.example.account.R;
 import com.example.account.tabbar.setting.Setting;
+import com.example.account.tabbar.today.Today;
 
 public class Login extends AppCompatActivity {
     //1.定义控件变量名称
@@ -61,7 +62,7 @@ public class Login extends AppCompatActivity {
         if("android".equals(username) && "123456".equals(password)){
             Toast.makeText(this,"登陆成功",Toast.LENGTH_LONG).show();
 
-            Intent intent = new Intent(this, Setting.class);
+            Intent intent = new Intent(this, Today.class);
             intent.putExtra("username",username);
             startActivity(intent);
         }else{

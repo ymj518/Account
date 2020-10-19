@@ -9,6 +9,7 @@ import android.view.View;
 import com.example.account.R;
 import com.example.account.tabbar.setting.Setting;
 import com.example.account.tabbar.zichan.Zichan;
+import com.example.account.tongji.Tongji;
 
 
 public class Yingcang extends AppCompatActivity implements View.OnClickListener  {
@@ -37,7 +38,7 @@ public class Yingcang extends AppCompatActivity implements View.OnClickListener 
                 overridePendingTransition(0, 0);
                 break;
             case R.id.btn_execise:
-                intent = new Intent(this, com.example.account.tabbar.Tongji.class);
+                intent = new Intent(this, Tongji.class);
                 startActivity(intent);
                 overridePendingTransition(0, 0);
                 break;

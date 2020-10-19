@@ -7,7 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 
 import com.example.account.R;
-import com.example.account.tabbar.Tongji;
+import com.example.account.tongji.Tongji;
 import com.example.account.tabbar.setting.Setting;
 import com.example.account.tabbar.today.Today;
 
@@ -26,6 +26,9 @@ public class Zichan extends AppCompatActivity implements View.OnClickListener  {
         findViewById(R.id.btn_message).setOnClickListener(this);
         findViewById(R.id.btn_my).setOnClickListener(this);
         findViewById(R.id.zhanghu).setOnClickListener(this);
+        findViewById(R.id.ll_chuxuka).setOnClickListener(this);
+        findViewById(R.id.ll_xianjing).setOnClickListener(this);
+        findViewById(R.id.ll_xingyonka).setOnClickListener(this);
     }
 
     @Override
@@ -53,6 +56,21 @@ public class Zichan extends AppCompatActivity implements View.OnClickListener  {
                 break;
             case R.id.zhanghu:
                 intent = new Intent(this, Zhanghu.class);
+                startActivity(intent);
+                overridePendingTransition(0, 0);
+                break;
+            case R.id.ll_chuxuka:
+                intent = new Intent(this, Tianjia.class);
+                startActivity(intent);
+                overridePendingTransition(0, 0);
+                break;
+            case R.id.ll_xianjing:
+                intent = new Intent(this, Tianjia.class);
+                startActivity(intent);
+                overridePendingTransition(0, 0);
+                break;
+            case R.id.ll_xingyonka:
+                intent = new Intent(this, Tianjia.class);
                 startActivity(intent);
                 overridePendingTransition(0, 0);
                 break;

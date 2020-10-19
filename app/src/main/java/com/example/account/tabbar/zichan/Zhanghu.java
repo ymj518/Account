@@ -6,9 +6,6 @@ import android.os.Bundle;
 import android.view.View;
 
 import com.example.account.R;
-import com.example.account.tabbar.Tongji;
-import com.example.account.tabbar.setting.Setting;
-import com.example.account.tabbar.today.Today;
 
 
 public class Zhanghu extends AppCompatActivity implements View.OnClickListener  {

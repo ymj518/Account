@@ -13,6 +13,7 @@ import android.widget.EditText;
 import com.example.account.R;
 import com.example.account.tabbar.setting.Setting;
 import com.example.account.tabbar.zichan.Zichan;
+import com.example.account.tongji.Tongji;
 
 public class Jsq extends Activity implements OnClickListener{
 
@@ -84,6 +85,7 @@ public class Jsq extends Activity implements OnClickListener{
         btEqu.setOnClickListener(this);
         btClear.setOnClickListener(this);
         btDel.setOnClickListener(this);
+
     }
 
     @SuppressLint("ResourceType")
@@ -105,7 +107,7 @@ public class Jsq extends Activity implements OnClickListener{
                 overridePendingTransition(0, 0);
                 break;
             case R.id.btn_execise:
-                intent = new Intent(this, com.example.account.tabbar.Tongji.class);
+                intent = new Intent(this, Tongji.class);
                 startActivity(intent);
                 overridePendingTransition(0, 0);
                 break;
@@ -229,5 +231,6 @@ public class Jsq extends Activity implements OnClickListener{
             etInput.setText("");
         }
     }
+    
 
 }

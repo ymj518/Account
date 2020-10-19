@@ -5,16 +5,18 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".tabbar.Tongji">
+    tools:context=".tabbar.today.Yingcang">
+
+
     <TextView
-        android:id="@+id/tv_title"
+        android:id="@+id/tv_time"
         android:layout_width="match_parent"
         android:layout_height="59dp"
         android:gravity="center"
         android:textStyle="bold"
-        android:text="TODAY"
+        android:text="10月2020年"
+        android:background="#F8F9F4"
         android:textSize="30sp" />
-
     <LinearLayout
         android:id="@+id/ll_content"
         android:layout_width="match_parent"
@@ -25,7 +27,7 @@
         android:orientation="vertical">
 
         <TextView
-            android:layout_marginTop="100dp"
+            android:layout_marginTop="60dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
@@ -43,35 +45,307 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="收入￥0"
+            android:text="共收入￥0"
+            android:textSize="18dp"
+            android:gravity="center"
+            android:textColor="#B1B1B1"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="结余￥-71112"
+            android:textSize="18dp"
+            android:gravity="center"
+            android:textColor="#B1B1B1"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="超支￥371469"
             android:textSize="18dp"
             android:gravity="center"
             android:textColor="#B1B1B1"/>
         <Button
-            android:layout_marginTop="40dp"
-            android:layout_width="150dp"
-            android:layout_height="wrap_content"
-            android:textSize="20dp"
-            android:text="记一笔"
-            android:background="@drawable/textview_border"
+            android:id="@+id/btn_jisuanji"
+            android:layout_marginTop="20dp"
+            android:layout_width="300dp"
+            android:layout_height="10dp"
+            android:background="@drawable/red"
             android:gravity="center"/>
-
-        <TextView
-            android:layout_marginTop="40dp"
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="本月支出￥216682"
+        android:textColor="#FDA29F"/>
+    <TextView
+        android:layout_marginLeft="110dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="月预算￥0"/>
+</LinearLayout>
+        <RadioGroup
+            android:layout_marginTop="50dp"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:text="隐藏近三十日账单（63）v"/>
-
-        <Button
-            android:layout_marginTop="30dp"
-            android:layout_width="120dp"
-            android:layout_height="wrap_content"
-            android:textSize="20dp"
-            android:text="查看详情"
-            android:background="@drawable/textview_border"
-            android:gravity="center"/>
-
+            android:layout_height="35dp"
+            android:background="#F2F2F2"
+            android:orientation="horizontal">
+            <RadioButton
+                style="@style/TabMenuItem"
+                android:text="一"
+                android:textColor="#AAA"/>
+            <RadioButton
+                style="@style/TabMenuItem"
+                android:text="二"
+                android:textColor="#aaa"/>
+            <RadioButton
+                style="@style/TabMenuItem"
+                android:text="三"
+                android:textColor="#aaa"/>
+            <RadioButton
+                style="@style/TabMenuItem"
+                android:text="四"
+                android:textColor="#AAA"/>
+            <RadioButton
+                style="@style/TabMenuItem"
+                android:text="五"
+                android:textColor="#aaa"/>
+            <RadioButton
+                style="@style/TabMenuItem"
+                android:text="六"
+                android:textColor="#aaa"/>
+            <RadioButton
+                style="@style/TabMenuItem"
+                android:text="七"
+                android:textColor="#aaa"/>
+        </RadioGroup>
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:background="#F2F2F2"
+            android:orientation="horizontal">
+            <RadioButton
+                style="@style/TabMenuItem"
+                android:textColor="#AAA"/>
+            <RadioButton
+                style="@style/TabMenuItem"
+                android:textColor="#aaa"/>
+            <RadioButton
+                style="@style/TabMenuItem"
+                android:textColor="#aaa"/>
+            <RadioButton
+                style="@style/TabMenuItem"
+                android:id="@+id/btn_1"
+                android:text="1"
+                android:textColor="#AAA"/>
+            <RadioButton
+                style="@style/TabMenuItem"
+                android:id="@+id/btn_2"
+                android:text="2"
+                android:textColor="#aaa"/>
+            <RadioButton
+                style="@style/TabMenuItem"
+                android:id="@+id/btn_3"
+                android:text="3"
+                android:textColor="#aaa"/>
+            <RadioButton
+                style="@style/TabMenuItem"
+                android:id="@+id/btn_4"
+                android:text="4"
+                android:textColor="#aaa"/>
+        </RadioGroup>
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:background="#F2F2F2"
+            android:orientation="horizontal">
+            <RadioButton
+                style="@style/TabMenuItem"
+                android:id="@+id/btn_5"
+                android:text="5"
+                android:textColor="#AAA"/>
+            <RadioButton
+                style="@style/TabMenuItem"
+                android:id="@+id/btn_6"
+                android:text="6"
+                android:textColor="#aaa"/>
+            <RadioButton
+                style="@style/TabMenuItem"
+                android:id="@+id/btn_7"
+                android:text="7"
+                android:textColor="#aaa"/>
+            <RadioButton
+                style="@style/TabMenuItem"
+                android:id="@+id/btn_8"
+                android:text="8"
+                android:textColor="#AAA"/>
+            <RadioButton
+                style="@style/TabMenuItem"
+                android:id="@+id/btn_9"
+                android:text="9"
+                android:textColor="#aaa"/>
+            <RadioButton
+                style="@style/TabMenuItem"
+                android:id="@+id/btn_10"
+                android:text="10"
+                android:textColor="#aaa"/>
+            <RadioButton
+                style="@style/TabMenuItem"
+                android:id="@+id/btn_11"
+                android:text="11"
+                android:textColor="#aaa"/>
+        </RadioGroup>
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:background="#F2F2F2"
+            android:orientation="horizontal">
+            <RadioButton
+                style="@style/TabMenuItem"
+                android:id="@+id/btn_12"
+                android:text="12"
+                android:textColor="#AAA"/>
+            <RadioButton
+                style="@style/TabMenuItem"
+                android:id="@+id/btn_13"
+                android:text="13"
+                android:textColor="#aaa"/>
+            <RadioButton
+                style="@style/TabMenuItem"
+                android:id="@+id/btn_14"
+                android:text="14"
+                android:textColor="#aaa"/>
+            <RadioButton
+                style="@style/TabMenuItem"
+                android:id="@+id/btn_15"
+                android:text="15"
+                android:textColor="#AAA"/>
+            <RadioButton
+                style="@style/TabMenuItem"
+                android:id="@+id/btn_16"
+                android:text="16"
+                android:textColor="#aaa"/>
+            <RadioButton
+                style="@style/TabMenuItem"
+                android:id="@+id/btn_17"
+                android:text="17"
+                android:textColor="#aaa"/>
+            <RadioButton
+                style="@style/TabMenuItem"
+                android:id="@+id/btn_18"
+                android:text="18"
+                android:textColor="#aaa"/>
+        </RadioGroup>
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:background="#F2F2F2"
+            android:orientation="horizontal">
+            <RadioButton
+                style="@style/TabMenuItem"
+                android:id="@+id/btn_19"
+                android:text="19"
+                android:textColor="#AAA"/>
+            <RadioButton
+                style="@style/TabMenuItem"
+                android:id="@+id/btn_20"
+                android:text="20"
+                android:textColor="#aaa"/>
+            <RadioButton
+                style="@style/TabMenuItem"
+                android:id="@+id/btn_21"
+                android:text="21"
+                android:textColor="#aaa"/>
+            <RadioButton
+                style="@style/TabMenuItem"
+                android:id="@+id/btn_22"
+                android:text="22"
+                android:textColor="#AAA"/>
+            <RadioButton
+                style="@style/TabMenuItem"
+                android:id="@+id/btn_23"
+                android:text="23"
+                android:textColor="#aaa"/>
+            <RadioButton
+                style="@style/TabMenuItem"
+                android:id="@+id/btn_24"
+                android:text="24"
+                android:textColor="#aaa"/>
+            <RadioButton
+                style="@style/TabMenuItem"
+                android:id="@+id/btn_25"
+                android:text="25"
+                android:textColor="#aaa"/>
+        </RadioGroup>
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:background="#F2F2F2"
+            android:orientation="horizontal">
+            <RadioButton
+                style="@style/TabMenuItem"
+                android:id="@+id/btn_26"
+                android:text="26"
+                android:textColor="#AAA"/>
+            <RadioButton
+                style="@style/TabMenuItem"
+                android:id="@+id/btn_27"
+                android:text="27"
+                android:textColor="#aaa"/>
+            <RadioButton
+                style="@style/TabMenuItem"
+                android:id="@+id/btn_28"
+                android:text="28"
+                android:textColor="#aaa"/>
+            <RadioButton
+                style="@style/TabMenuItem"
+                android:id="@+id/btn_29"
+                android:text="29"
+                android:textColor="#AAA"/>
+            <RadioButton
+                style="@style/TabMenuItem"
+                android:id="@+id/btn_30"
+                android:text="30"
+                android:textColor="#aaa"/>
+            <RadioButton
+                style="@style/TabMenuItem"
+                android:id="@+id/btn_31"
+                android:text="31"
+                android:textColor="#aaa"/>
+            <RadioButton
+                style="@style/TabMenuItem"
+                android:textColor="#aaa"/>
+        </RadioGroup>
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:background="#F2F2F2"
+            android:orientation="horizontal">
+            <RadioButton
+                style="@style/TabMenuItem"
+                android:textColor="#AAA"/>
+            <RadioButton
+                style="@style/TabMenuItem"
+                android:textColor="#aaa"/>
+            <RadioButton
+                style="@style/TabMenuItem"
+                android:textColor="#aaa"/>
+            <RadioButton
+                style="@style/TabMenuItem"
+                android:textColor="#AAA"/>
+            <RadioButton
+                style="@style/TabMenuItem"
+                android:textColor="#aaa"/>
+            <RadioButton
+                style="@style/TabMenuItem"
+                android:textColor="#aaa"/>
+            <RadioButton
+                style="@style/TabMenuItem"
+                android:textColor="#aaa"/>
+        </RadioGroup>
 
         <FrameLayout
             android:id="@+id/main_body"
@@ -114,4 +388,5 @@
             android:text="我的"
             android:textColor="#aaa"/>
     </RadioGroup>
+
 </LinearLayout>

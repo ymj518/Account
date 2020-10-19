@@ -105,6 +105,7 @@
         android:layout_height="wrap_content">
 
         <Button
+            style="?android:attr/borderlessButtonStyle"
             android:layout_marginRight="10dp"
             android:id="@+id/btn_login"
             android:text="立刻注册"
@@ -116,6 +117,7 @@
             android:layout_height="wrap_content"/>
 
         <Button
+            style="?android:attr/borderlessButtonStyle"
             android:layout_marginLeft="10dp"
             android:id="@+id/btn_register"
             android:text="找回密码"
