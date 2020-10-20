@@ -270,6 +270,7 @@
     android:background="@drawable/textview_border"
     android:orientation="vertical">
     <EditText
+        style="?android:attr/borderlessButtonStyle"
         android:id="@+id/etInput"
         android:layout_width="310dp"
         android:layout_height="30dip"
@@ -285,6 +286,7 @@
         android:orientation="horizontal" >  <!-- 代表水平排布 -->
 
         <Button
+            style="?android:attr/borderlessButtonStyle"
             android:id="@+id/btClear"
             android:background="@drawable/button_border"
         android:layout_width="75dp"
@@ -292,6 +294,7 @@
         android:textSize="20sp"
         android:text="C" />
         <Button
+            style="?android:attr/borderlessButtonStyle"
             android:id="@+id/btDel"
             android:background="@drawable/button_border"
             android:layout_marginLeft="5dp"
@@ -300,6 +303,7 @@
             android:textSize="20sp"
             android:text="DEL" />
         <Button
+            style="?android:attr/borderlessButtonStyle"
             android:id="@+id/btDivide"
             android:background="@drawable/button_border"
             android:layout_marginLeft="5dp"
@@ -308,6 +312,7 @@
             android:textSize="20sp"
             android:text="/" />
         <Button
+            style="?android:attr/borderlessButtonStyle"
             android:id="@+id/btMul"
             android:background="@drawable/button_border"
             android:layout_marginLeft="5dp"
@@ -325,6 +330,7 @@
         android:orientation="horizontal" >
 
         <Button
+            style="?android:attr/borderlessButtonStyle"
             android:id="@+id/btSeven"
             android:background="@drawable/button_border"
             android:layout_width="75dp"
@@ -332,6 +338,7 @@
             android:textSize="20sp"
             android:text="7" />
         <Button
+            style="?android:attr/borderlessButtonStyle"
             android:id="@+id/btEight"
             android:background="@drawable/button_border"
             android:layout_marginLeft="5dp"
@@ -340,6 +347,7 @@
             android:textSize="20sp"
             android:text="8" />
         <Button
+            style="?android:attr/borderlessButtonStyle"
             android:id="@+id/btNine"
             android:background="@drawable/button_border"
             android:layout_marginLeft="5dp"
@@ -348,6 +356,7 @@
             android:textSize="20sp"
             android:text="9" />
         <Button
+            style="?android:attr/borderlessButtonStyle"
             android:id="@+id/btJian"
             android:background="@drawable/button_border"
             android:layout_marginLeft="5dp"
@@ -365,6 +374,7 @@
         android:orientation="horizontal" >
 
         <Button
+            style="?android:attr/borderlessButtonStyle"
             android:id="@+id/btFour"
             android:background="@drawable/button_border"
             android:layout_width="75dp"
@@ -372,6 +382,7 @@
             android:textSize="20sp"
             android:text="4" />
         <Button
+            style="?android:attr/borderlessButtonStyle"
             android:id="@+id/btFive"
             android:background="@drawable/button_border"
             android:layout_marginLeft="5dp"
@@ -380,6 +391,7 @@
             android:textSize="20sp"
             android:text="5" />
         <Button
+            style="?android:attr/borderlessButtonStyle"
             android:id="@+id/btSix"
             android:background="@drawable/button_border"
             android:layout_marginLeft="5dp"
@@ -388,6 +400,7 @@
             android:textSize="20sp"
             android:text="6" />
         <Button
+            style="?android:attr/borderlessButtonStyle"
             android:id="@+id/btJia"
             android:background="@drawable/button_border"
             android:layout_marginLeft="5dp"
@@ -412,6 +425,7 @@
                 android:layout_height="wrap_content"
                 android:orientation="horizontal" >
                 <Button
+                    style="?android:attr/borderlessButtonStyle"
                     android:id="@+id/btOne"
                     android:background="@drawable/button_border"
                     android:layout_width="75dp"
@@ -419,6 +433,7 @@
                     android:textSize="20sp"
                     android:text="1" />
                 <Button
+                    style="?android:attr/borderlessButtonStyle"
                     android:id="@+id/btTwo"
                     android:background="@drawable/button_border"
                     android:layout_marginLeft="5dp"
@@ -427,6 +442,7 @@
                     android:textSize="20sp"
                     android:text="2" />
                 <Button
+                    style="?android:attr/borderlessButtonStyle"
                     android:id="@+id/btThree"
                     android:background="@drawable/button_border"
                     android:layout_marginLeft="5dp"
@@ -441,6 +457,7 @@
                 android:layout_marginTop="5dp"
                 android:orientation="horizontal" >
                 <Button
+                    style="?android:attr/borderlessButtonStyle"
                     android:id="@+id/btZero"
                     android:background="@drawable/button_border"
                     android:layout_width="155dp"
@@ -448,6 +465,7 @@
                     android:textSize="20sp"
                     android:text="0" />
                 <Button
+                    style="?android:attr/borderlessButtonStyle"
                     android:id="@+id/btPoint"
                     android:background="@drawable/button_border"
                     android:layout_marginLeft="5dp"
@@ -458,6 +476,7 @@
             </LinearLayout>
         </LinearLayout>
         <Button
+            style="?android:attr/borderlessButtonStyle"
             android:layout_width="75dp"
             android:background="@drawable/button_border"
             android:layout_height="65dp"
