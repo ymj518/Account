@@ -38,6 +38,7 @@
         android:orientation="horizontal"
         android:layout_gravity="center">
         <Button
+            android:id="@+id/btn_set1"
             android:layout_width="85dp"
             android:layout_height="75dp"
             android:background="@drawable/button_border"
@@ -46,6 +47,7 @@
             android:layout_marginLeft="35dp"
             android:textColor="#AAA" />
         <Button
+            android:id="@+id/btn_set2"
             android:layout_width="85dp"
             android:layout_height="75dp"
             android:background="@drawable/button_border"
@@ -54,6 +56,7 @@
             android:layout_marginLeft="35dp"
             android:textColor="#AAA" />
         <Button
+            android:id="@+id/btn_set3"
             android:layout_width="85dp"
             android:layout_height="75dp"
             android:background="@drawable/button_border"
@@ -68,6 +71,7 @@
         android:orientation="horizontal"
         android:layout_gravity="center">
         <Button
+            android:id="@+id/btn_set4"
             android:layout_width="85dp"
             android:layout_height="75dp"
             android:background="@drawable/button_border"
@@ -76,6 +80,7 @@
             android:layout_marginLeft="35dp"
             android:textColor="#AAA" />
         <Button
+            android:id="@+id/btn_set5"
             android:layout_width="85dp"
             android:layout_height="75dp"
             android:background="@drawable/button_border"
@@ -84,6 +89,7 @@
             android:layout_marginLeft="35dp"
             android:textColor="#AAA" />
         <Button
+            android:id="@+id/btn_set6"
             android:layout_width="85dp"
             android:layout_height="75dp"
             android:background="@drawable/button_border"
@@ -99,6 +105,7 @@
         android:orientation="horizontal"
         android:layout_gravity="center">
         <Button
+            android:id="@+id/btn_set7"
             android:layout_width="85dp"
             android:layout_height="75dp"
             android:background="@drawable/button_border"
@@ -107,6 +114,7 @@
             android:layout_marginLeft="35dp"
             android:textColor="#AAA" />
         <Button
+            android:id="@+id/btn_set8"
             android:layout_width="85dp"
             android:layout_height="75dp"
             android:background="@drawable/button_border"
@@ -115,6 +123,7 @@
             android:layout_marginLeft="35dp"
             android:textColor="#AAA" />
         <Button
+            android:id="@+id/btn_set9"
             android:layout_width="85dp"
             android:layout_height="75dp"
             android:background="@drawable/button_border"
@@ -129,7 +138,7 @@
         android:orientation="horizontal"
         android:layout_gravity="center">
         <Button
-            android:id="@+id/btn_audio_icon"
+            android:id="@+id/btn_set10"
             android:layout_width="85dp"
             android:layout_height="75dp"
             android:background="@drawable/button_border"
@@ -138,6 +147,7 @@
             android:layout_marginLeft="35dp"
             android:textColor="#AAA" />
         <Button
+            android:id="@+id/btn_set11"
             android:layout_width="85dp"
             android:layout_height="75dp"
             android:background="@drawable/button_border"

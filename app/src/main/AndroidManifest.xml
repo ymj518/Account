@@ -10,7 +10,6 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
         <activity android:name=".tongji.Yuedu"></activity>
-        <activity android:name=".tabbar.setting.ActivitySet11" />
         <activity android:name=".tabbar.setting.ActivitySet10" />
         <activity android:name=".tabbar.setting.ActivitySet9" />
         <activity android:name=".tabbar.setting.ActivitySet8" />

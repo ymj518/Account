@@ -1,35 +1,35 @@
 package com.example.account.tabbar.setting;
 
-import androidx.appcompat.app.AppCompatActivity;
+        import androidx.appcompat.app.AppCompatActivity;
 
-import android.content.Intent;
-import android.os.Bundle;
-import android.view.View;
-import android.widget.Switch;
-import android.widget.Toast;
+        import android.content.Intent;
+        import android.net.Uri;
+        import android.os.Bundle;
+        import android.provider.Settings;
+        import android.view.View;
+        import android.widget.Switch;
+        import android.widget.Toast;
 
-import com.example.account.R;
+        import com.example.account.R;
+        import com.example.account.tabbar.today.Today;
 
-public class ActivitySet2 extends AppCompatActivity {
+public class ActivitySet2 extends AppCompatActivity implements View.OnClickListener{
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        overridePendingTransition(0, 0);
         setContentView(R.layout.activity_set2);
+        findViewById(R.id.arrow).setOnClickListener(this);
     }
 
     public void onClick(View view) {
-        Intent intent = new Intent();
         switch (view.getId()) {
-            //使用隐式Intent实现 Activity的跳转
             case R.id.arrow:
-                intent.setAction("com.example.activity.SECOND_ACTIVITY");
-                intent.putExtra("msg","second activity");
+                Intent intent = new Intent(this, Setting.class);
+                startActivity(intent);
+                overridePendingTransition(0, 0);
                 break;
-        }
-        //判断intent 指向的action是否存在
-        if(intent.resolveActivity(getPackageManager()) !=null) {
-            startActivity(intent);
         }
     }
 
