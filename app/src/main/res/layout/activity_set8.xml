@@ -21,29 +21,46 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="120dp"
-            android:text="月度预算"
+            android:text="同一作者"
             android:textSize="24sp"
             android:textColor="#000000"/>
     </LinearLayout>
+
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="40dp"
+        android:layout_height="50dp"
         android:layout_margin="15dp"
-        android:background="@drawable/button_border"
         android:orientation="horizontal">
-        <TextView
+        <ImageView
+            android:layout_marginTop="10dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="开启预算功能"
-            android:textSize="18dp"
-            android:textColor="#000000"/>
-        <Switch
-            android:id="@+id/switch1"
-            android:onClick="swtichClick"
+            android:src="@drawable/sun"/>
+        <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="250dp"
-            android:checked="false" />
+            android:layout_marginLeft="20dp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="小日常"
+                android:textSize="20dp"
+                android:textColor="#000000"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="如此清新的习惯养成打卡小工具"
+                android:textSize="16dp" />
+        </LinearLayout>
+        <Button
+            android:id="@+id/btn_xiazai"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="下载"
+            android:textColor="#000000"
+            android:background="@drawable/button_border"/>
     </LinearLayout>
 
 </LinearLayout>

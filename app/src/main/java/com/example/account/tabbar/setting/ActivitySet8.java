@@ -19,6 +19,7 @@ public class ActivitySet8 extends AppCompatActivity implements View.OnClickListe
         overridePendingTransition(0, 0);
         setContentView(R.layout.activity_set8);
         findViewById(R.id.arrow).setOnClickListener(this);
+        findViewById(R.id.btn_xiazai).setOnClickListener(this);
     }
 
     public void onClick(View view) {
@@ -27,6 +28,12 @@ public class ActivitySet8 extends AppCompatActivity implements View.OnClickListe
                 Intent intent = new Intent(this, Setting.class);
                 startActivity(intent);
                 overridePendingTransition(0, 0);
+                break;
+            case R.id.btn_xiazai:
+                Uri uri = Uri.parse("https://wap.pp.cn/app_z5Wdcxyodcxe/");    //设置跳转的网站
+                intent = new Intent(Intent.ACTION_VIEW, uri);
+                startActivity(intent);
+
                 break;
         }
     }
