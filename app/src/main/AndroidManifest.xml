@@ -13,7 +13,13 @@
         <activity android:name=".tabbar.setting.ActivitySet10" />
         <activity android:name=".tabbar.setting.ActivitySet9" />
         <activity android:name=".tabbar.setting.ActivitySet8" />
-        <activity android:name=".tabbar.setting.ActivitySet7" />
+        <activity android:name=".tabbar.setting.ActivitySet7" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity android:name=".tabbar.setting.ActivitySet6" />
         <activity android:name=".tabbar.setting.ActivitySet5" />
         <activity android:name=".tabbar.setting.ActivitySet4" />
@@ -30,11 +36,7 @@
         <activity android:name=".tabbar.today.Today" />
         <activity android:name=".tongji.Tongji" />
         <activity android:name=".login.Login">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
     </application>
 
