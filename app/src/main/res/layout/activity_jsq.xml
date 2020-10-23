@@ -75,7 +75,7 @@
 
     </GridLayout>
     <GridLayout
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="30dp"
         android:layout_width="match_parent"
         android:layout_height="65dp"
         android:orientation="horizontal"
@@ -137,15 +137,16 @@
 
     </GridLayout>
     <GridLayout
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="30dp"
         android:layout_width="match_parent"
         android:layout_height="65dp"
         android:orientation="horizontal"
         android:layout_gravity="center">
+
         <Button
             android:id="@+id/btn_13"
             android:layout_width="60dp"
-            android:layout_height="60dp"
+            android:layout_height="match_parent"
             android:layout_marginLeft="5dp"
             android:background="@drawable/button_border"
             android:drawableTop="@drawable/muyin"
@@ -199,7 +200,7 @@
 
     </GridLayout>
     <GridLayout
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="30dp"
         android:layout_width="match_parent"
         android:layout_height="65dp"
         android:orientation="horizontal"
@@ -262,7 +263,7 @@
     </GridLayout>
 <LinearLayout
     android:id="@+id/ll_content"
-    android:layout_marginTop="00dp"
+    android:layout_marginTop="20dp"
     android:layout_width="match_parent"
     android:layout_height="0dp"
     android:layout_weight="1"

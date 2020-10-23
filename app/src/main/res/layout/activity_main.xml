@@ -1,26 +1,45 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/Lin_start"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="horizontal"
+    android:orientation="vertical"
     tools:context=".login.MainActivity">
+    <Button
+        android:layout_marginLeft="330dp"
+        android:layout_marginTop="5dp"
+        android:layout_width="70dp"
+        android:layout_height="30dp"
+        android:background="@drawable/black"
+        android:textColor="#FFF"
+        android:alpha="0.1"
+        android:text="点击跳转"
+        android:textSize="10dp"/>
 
+    <LinearLayout
+        android:layout_width="250dp"
+        android:layout_height="100dp"
+        android:background="@drawable/button_border"
+        android:layout_marginTop="250dp"
+        android:layout_marginLeft="77dp"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="“抱紧你的我，比国王富有。”"
+            android:textSize="15dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:textColor="#000000"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="---《国王与乞丐》"
+            android:textSize="15dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="100dp"/>
 
-    <TextView
-        android:layout_marginTop="200dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center_horizontal"
-        android:text="今日支出"
-        android:textSize="20dp"
-        android:textColor="#A1DECE"/>
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center_horizontal"
-        android:text="今日支出"
-        android:textSize="20dp"
-        android:textColor="#A1DECE"/>
-</androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+</LinearLayout>

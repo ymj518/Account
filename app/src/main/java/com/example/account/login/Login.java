@@ -94,7 +94,7 @@ public class Login extends AppCompatActivity {
         }
 
         //3.2.比较用户名和密码是否正确，然后给出提示
-        if("android".equals(username) && "123456".equals(password)){
+        if("thirteen".equals(username) && "147258369".equals(password)){
             Toast.makeText(this,"登陆成功",Toast.LENGTH_LONG).show();
 
             Intent intent = new Intent(this, Today.class);

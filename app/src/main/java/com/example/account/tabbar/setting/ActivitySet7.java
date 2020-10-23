@@ -21,17 +21,14 @@ public class ActivitySet7 extends AppCompatActivity implements View.OnClickListe
     private String[] times = {"7/1","","7/1","7/1","7/1","7/1","7/1","7/1","7/1","7/1","7/1","7/1","7/1",};
     private int[] icons = {R.drawable.cnf,R.drawable.hkd,
             R.drawable.jpy,R.drawable.hkd,
-            R.drawable.eur,R.drawable.gbp,
-            R.drawable.krw,R.drawable.thb,
-            R.drawable.aud,R.drawable.nzd,
-            R.drawable.idr,R.drawable.sgd,
-            R.drawable.myr,R.drawable.brl,
-            R.drawable.php,R.drawable.rub,
-            R.drawable.huf,R.drawable.btc,
-            R.drawable.inr,R.drawable.cad,
-            R.drawable.nzd,R.drawable.chf,
-            R.drawable.mxn,R.drawable.czk,
-            R.drawable.dkk,};
+            R.drawable.cnf,R.drawable.hkd,
+            R.drawable.jpy,R.drawable.hkd,R.drawable.cnf,R.drawable.hkd,
+            R.drawable.jpy,R.drawable.hkd,R.drawable.cnf,R.drawable.hkd,
+            R.drawable.jpy,R.drawable.hkd,R.drawable.cnf,R.drawable.hkd,
+            R.drawable.jpy,R.drawable.hkd,R.drawable.cnf,R.drawable.hkd,
+            R.drawable.jpy,R.drawable.hkd,R.drawable.cnf,
+    };
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

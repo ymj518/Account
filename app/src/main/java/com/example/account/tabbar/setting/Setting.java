@@ -28,6 +28,7 @@ public class Setting extends AppCompatActivity implements View.OnClickListener  
         findViewById(R.id.btn_execise).setOnClickListener(this);
         findViewById(R.id.btn_message).setOnClickListener(this);
         findViewById(R.id.btn_my).setOnClickListener(this);
+        findViewById(R.id.btn_touxiang).setOnClickListener(this);
         findViewById(R.id.btn_set1).setOnClickListener(this);
         findViewById(R.id.btn_set2).setOnClickListener(this);
         findViewById(R.id.btn_set3).setOnClickListener(this);
@@ -39,7 +40,7 @@ public class Setting extends AppCompatActivity implements View.OnClickListener  
         findViewById(R.id.btn_set9).setOnClickListener(this);
         findViewById(R.id.btn_set10).setOnClickListener(this);
         findViewById(R.id.btn_set11).setOnClickListener(this);
-
+        findViewById(R.id.btn_set12).setOnClickListener(this);
 
         Intent intent = getIntent();
         if (intent != null) {
@@ -68,6 +69,11 @@ public class Setting extends AppCompatActivity implements View.OnClickListener  
                 break;
             case R.id.btn_my:
                 intent = new Intent(this, Setting.class);
+                startActivity(intent);
+                overridePendingTransition(0, 0);
+                break;
+            case R.id.btn_touxiang:
+                intent = new Intent(this, ActivityTouxiang.class);
                 startActivity(intent);
                 overridePendingTransition(0, 0);
                 break;
@@ -125,9 +131,12 @@ public class Setting extends AppCompatActivity implements View.OnClickListener  
                 Uri uri = Uri.parse("https://weibo.com/u/5729698185");    //设置跳转的网站
                 intent = new Intent(Intent.ACTION_VIEW, uri);
                 startActivity(intent);
-
                 break;
-
+            case R.id.btn_set12:
+                intent = new Intent(this, ActivityMusic.class);
+                startActivity(intent);
+                overridePendingTransition(0, 0);
+                break;
         }
     }
 }

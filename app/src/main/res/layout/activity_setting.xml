@@ -20,11 +20,13 @@
         android:textSize="30sp" />
 
     <Button
-        android:layout_marginTop="10dp"
-        android:layout_width="70dp"
-        android:layout_height="70dp"
+        android:id="@+id/btn_touxiang"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
         android:layout_gravity="center"
-        android:background="@drawable/touxiang"/>
+        android:layout_marginTop="10dp"
+        android:background="@drawable/touxiang" />
     <TextView
         android:id="@+id/tv_username"
         android:layout_marginTop="10dp"
@@ -153,6 +155,15 @@
             android:background="@drawable/button_border"
             android:drawableTop="@drawable/weibo"
             android:text="作者微博"
+            android:layout_marginLeft="35dp"
+            android:textColor="#AAA" />
+        <Button
+            android:id="@+id/btn_set12"
+            android:layout_width="85dp"
+            android:layout_height="75dp"
+            android:background="@drawable/button_border"
+            android:drawableTop="@drawable/weibo"
+            android:text="休息一下"
             android:layout_marginLeft="35dp"
             android:textColor="#AAA" />
 

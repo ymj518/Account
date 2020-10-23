@@ -9,17 +9,17 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
-        <activity android:name=".tongji.Yuedu"></activity>
+        <service
+            android:name=".tabbar.setting.MusicService"
+            android:exported="false"></service>
+
+        <activity android:name=".tabbar.setting.ActivityMusic" />
+        <activity android:name=".tabbar.setting.ActivityTouxiang" />
+        <activity android:name=".tongji.Yuedu" />
         <activity android:name=".tabbar.setting.ActivitySet10" />
         <activity android:name=".tabbar.setting.ActivitySet9" />
         <activity android:name=".tabbar.setting.ActivitySet8" />
-        <activity android:name=".tabbar.setting.ActivitySet7" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+        <activity android:name=".tabbar.setting.ActivitySet7" />
         <activity android:name=".tabbar.setting.ActivitySet6" />
         <activity android:name=".tabbar.setting.ActivitySet5" />
         <activity android:name=".tabbar.setting.ActivitySet4" />
@@ -31,7 +31,13 @@
         <activity android:name=".tabbar.today.Yingcang" />
         <activity android:name=".tabbar.today.Jsq" />
         <activity android:name=".tabbar.zichan.Zichan" />
-        <activity android:name=".login.MainActivity" />
+        <activity android:name=".login.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity android:name=".tabbar.setting.Setting" />
         <activity android:name=".tabbar.today.Today" />
         <activity android:name=".tongji.Tongji" />
